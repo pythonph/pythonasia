@@ -1,0 +1,29 @@
+databases:
+  - name: pythonasia-db
+    region: singapore
+    plan: free
+    ipAllowList: []
+
+services:
+  - type: web
+    plan: free
+    runtime: python
+    name: pythonasia-server
+    region: singapore
+    buildCommand: "./deploy/build.sh"
+    startCommand: "./deploy/start.sh"
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: "config.settings"
+      - key: PYTHON_VERSION
+        value: 3.13
+      - key: DATABASE_URL
+        fromDatabase:
+          name: pythonasia-db
+          property: connectionString
+      - key: DEBUG
+        value: "False"
+      - key: APP_ENV
+        value: production
+      - key: SECRET_KEY
+        generateValue: true

@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+body {
+  background-color: #fff9f2;
+  color: #7c5e3b;
+  font-size: 24px;
+}

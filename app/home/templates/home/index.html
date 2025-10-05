@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="min-h-screen" style="background-image: url('{% static 'img/background.png' %}');">
+    <main>
+        <section id="hero" class="text-white text-center flex items-center pt-20">
+            <div class="container mx-auto px-6 bg-cover w-[959.82px] hero-content">
+            <div class="flex flex-col items-center space-y-8"
+                <img src="{% static 'img/kliN.png' %}" alt="kliN" class="w-[189px] h-auto"
+                <img src="{% static 'img/kalinga.png' %}" alt="Kalinga" class="w-[336.34px] h-auto">
+                <img src="{% static 'img/pythonasia2026.png' %}" alt="PythonAsia 2026" class="w-[635px] h-auto">
+                <div class="text-center text-[#7C5E3B] z-30">
+                    Nurturing a community of care, compassion, and growth.<br/>
+                    The same heart of PyCon APAC, now as PythonAsia.
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="relative w-full h-[950px] mt-[-20px] z-0">
+        <img src="{% static 'img/pytonio.svg' %}" alt="Left Snake" class="absolute left-0 bottom-80 w-[670px]">
+        <img src="{% static 'img/pytria.svg' %}" alt="Right Snake" class="absolute right-0 bottom-80 w-[670px]">
+        <img src="{% static 'img/pot.svg' %}" alt="Pot" class="absolute bottom-80 left-1/2 ml-[-70px] -translate-x-1/2 w-[574.49px] z-10">
+        <img src="{% static 'img/base.svg' %}" alt="Bottom Base" class="absolute bottom-0 left-0 right-0 w-full z-0">
+        <div class="absolute bottom-40 w-full text-center z-30">
+            <h3 class="text-white font-bold">CO-ORGANIZED BY</h3>
+            <img class="mx-auto h-[100px]" src="{% static 'img/coorganizers.png' %}">
+        </div>
+    </footer>
+</div>
+{% endblock %}

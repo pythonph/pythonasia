@@ -1,0 +1,20 @@
+   {% load static tailwind_cli %}
+   <!DOCTYPE html>
+   <html>
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PythonAsia 2026">
+    <title>PythonAsia 2026: {% block title %}{% endblock %}</title>
+    {% tailwind_css %}
+    {% block extra_css %}{% endblock %}
+    <style>
+    .hero-content {
+        background-image: url("{% static 'hero-bg.png' %}");
+    }
+    </style>
+   </head>
+   <body>
+       {% block content %}{% endblock %}
+   </body>
+   </html>
