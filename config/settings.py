@@ -73,6 +73,15 @@ INSTALLED_APPS = [
 if settings.APP_ENV == "development":
     INSTALLED_APPS.insert(0, "whitenoise.runserver_nostatic")
 
+
+LOCAL_MIDDLEWARE = [
+    "config.middleware.HealthCheckMiddleware",
+]
+
+THIRD_PARTY_MIDDLEWARE = [
+    "whitenoise.middleware.WhiteNoiseMiddleware",
+]
+
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
@@ -82,7 +91,8 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "whitenoise.middleware.WhiteNoiseMiddleware",
+    *THIRD_PARTY_MIDDLEWARE,
+    *LOCAL_MIDDLEWARE,
 ]
 
 ROOT_URLCONF = "config.urls"
@@ -172,6 +182,10 @@ STATIC_URL = "/static/"
 
 MEDIA_ROOT = BASE_DIR / "mediafiles"
 MEDIA_URL = "/media/"
+
+# WhiteNoise configuration for media files
+WHITENOISE_USE_FINDERS = True
+WHITENOISE_AUTOREFRESH = True
 
 # Django Tailwind CLI
 # https://django-tailwind-cli.readthedocs.io/latest/
