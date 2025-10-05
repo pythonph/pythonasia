@@ -122,7 +122,7 @@ else:
         "default": {
             "ENGINE": "django.db.backends.postgresql_psycopg2",
             "DISABLE_SERVER_SIDE_CURSORS": True,
-            **settings.db_config(),
+            **settings.get_db_config(),
         }
     }
 
