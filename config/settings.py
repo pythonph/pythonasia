@@ -78,20 +78,16 @@ LOCAL_MIDDLEWARE = [
     "config.middleware.HealthCheckMiddleware",
 ]
 
-THIRD_PARTY_MIDDLEWARE = [
-    "whitenoise.middleware.WhiteNoiseMiddleware",
-]
-
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    *THIRD_PARTY_MIDDLEWARE,
     *LOCAL_MIDDLEWARE,
 ]
 
