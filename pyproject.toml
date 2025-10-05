@@ -8,6 +8,7 @@ dependencies = [
     "django>=5.2.7",
     "django-cors-headers>=4.9.0",
     "django-tailwind-cli>=4.4.2",
+    "gunicorn>=23.0.0",
     "psycopg2-binary>=2.9.10",
     "pydantic-settings>=2.11.0",
     "requests>=2.32.5",
