@@ -18,7 +18,7 @@ run-ruff:
 run-server-tailwind:
 	$(PYTHON) $(MANAGE) tailwind runserver
 
-run-tailwind-setup
+run-tailwind-setup:
 	$(PYTHON) $(MANAGE) tailwind setup
 
 run-tailwind-build:
