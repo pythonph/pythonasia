@@ -54,7 +54,6 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "app.home",
-    "app.presentations",
     "app.speakers",
     "app.sponsors",
 ]
