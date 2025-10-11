@@ -1,0 +1,60 @@
+{% load static %}
+
+<section id="sponsors" class="py-20">
+    <div class="container mx-auto px-6">
+        <!-- Header with Python Mascots -->
+        <div class="relative mb-16">
+            <div class="max-w-3xl">
+                <p class="text-sm uppercase tracking-wider mb-4" style="color: #7C5E3B;">
+                    ᜊᜆ ᜊᜌᜈ᜔ ᜊᜆᜑᜈ᜔
+                </p>
+                <h2 class="text-5xl md:text-6xl font-bold mb-6" style="color: #D87A3F;">
+                    Special Thanks<br/>to Our Sponsors
+                </h2>
+                <p class="text-lg" style="color: #7C5E3B;">
+                    This event was made possible with the help of our generous sponsors
+                </p>
+            </div>
+            
+            <!-- Python Mascots -->
+            <div class="hidden lg:block absolute top-0 right-0" style="transform: translateY(-20px);">
+                <div class="flex space-x-4">
+                    <img src="{% static 'img/python-blue.png' %}" alt="Python Blue" class="w-40 h-auto">
+                    <img src="{% static 'img/python-yellow.png' %}" alt="Python Yellow" class="w-40 h-auto">
+                </div>
+            </div>
+        </div>
+
+        <!-- Organizer Section -->
+        <div class="mb-16">
+            <h3 class="text-2xl font-bold mb-8 uppercase" style="color: #7C5E3B;">Organizer</h3>
+            <div class="grid md:grid-cols-3 gap-8 items-center">
+                <!-- Python Software Foundation -->
+                <div class="bg-white rounded-lg p-8 flex items-center justify-center h-48">
+                    <img src="{% static 'img/sponsors/python-software-foundation.svg' %}" alt="Python Software Foundation" class="max-w-full max-h-32 object-contain">
+                </div>
+                
+                <!-- Python Asia Organization -->
+                <div class="bg-white rounded-lg p-8 flex items-center justify-center h-48">
+                    <img src="{% static 'img/sponsors/python-asia-organization.svg' %}" alt="Python Asia Organization" class="max-w-full max-h-32 object-contain">
+                </div>
+                
+                <!-- De La Salle University Manila -->
+                <div class="bg-white rounded-lg p-8 flex items-center justify-center h-48">
+                    <img src="{% static 'img/sponsors/dlsu-manila.svg' %}" alt="De La Salle University Manila" class="max-w-full max-h-32 object-contain">
+                </div>
+            </div>
+        </div>
+
+        <!-- Institutional Sponsor Section -->
+        <div class="mb-16">
+            <h3 class="text-2xl font-bold mb-8 uppercase" style="color: #7C5E3B;">Institutional Sponsor</h3>
+            <div class="max-w-md">
+                <div class="bg-white rounded-lg p-8 flex items-center justify-center h-48">
+                    <img src="{% static 'img/sponsors/python-software-foundation.svg' %}" alt="Python Software Foundation" class="max-w-full max-h-32 object-contain">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

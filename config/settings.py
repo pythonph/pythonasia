@@ -1,3 +1,4 @@
+import time
 import django.db.models.signals
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
@@ -26,6 +27,8 @@ sentry_sdk.init(
 )
 
 # General Settings
+
+APP_ENV = settings.APP_ENV
 
 SECRET_KEY = settings.SECRET_KEY
 
@@ -87,6 +90,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "django_browser_reload.middleware.BrowserReloadMiddleware",
     *LOCAL_MIDDLEWARE,
 ]
 
@@ -104,6 +108,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                "config.context_processors.static_version",
             ],
         },
     },
@@ -174,6 +179,9 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
 STATIC_URL = "/static/"
+
+# Cache busting version - increment this when CSS/JS changes
+STATIC_VERSION = str(int(time.time()))  # or manually set like "1.0.1"
 
 MEDIA_ROOT = BASE_DIR / "mediafiles"
 MEDIA_URL = "/media/"

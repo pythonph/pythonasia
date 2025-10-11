@@ -1,0 +1,44 @@
+{% load static %}
+
+<footer class="flex flex-col items-center bg-[#F4E6D4] py-12">
+    <!-- PythonAsia 2026 Branding -->
+    <img src="{% static 'img/vectors/python-asia-branding.png' %}" class="mt-10" alt="Footer">
+    
+    <!-- Action Links -->
+    <div class="flex gap-8 mt-10 mb-6">
+        <a href="#" class="text-[#E8893D] text-xl font-bold hover:underline">GET TICKETS</a>
+        <a href="#" class="text-[#E8893D] text-xl font-bold hover:underline">BECOME A SPONSOR</a>
+    </div>
+    
+    <!-- Contact Message -->
+    <p class="text-[#7C5E3B] text-sm mb-4">
+        Message us at <a href="mailto:pycon@python.ph" class="underline">pycon@python.ph</a> for questions and inquiries
+    </p>
+    
+    <!-- Social Media Icons -->
+    <div class="flex gap-4 mb-4">
+        <a href="#" class="hover:opacity-70 transition-opacity" aria-label="Slack">
+            <img src="https://cdn.simpleicons.org/slack/7C5E3B" alt="Slack" class="w-6 h-6">
+        </a>
+        <a href="#" class="hover:opacity-70 transition-opacity" aria-label="Facebook">
+            <img src="https://cdn.simpleicons.org/facebook/7C5E3B" alt="Facebook" class="w-6 h-6">
+        </a>
+        <a href="#" class="hover:opacity-70 transition-opacity" aria-label="GitHub">
+            <img src="https://cdn.simpleicons.org/github/7C5E3B" alt="GitHub" class="w-6 h-6">
+        </a>
+        <a href="#" class="hover:opacity-70 transition-opacity" aria-label="Twitter">
+            <img src="https://cdn.simpleicons.org/twitter/7C5E3B" alt="Twitter" class="w-6 h-6">
+        </a>
+        <a href="#" class="hover:opacity-70 transition-opacity" aria-label="Instagram">
+            <img src="https://cdn.simpleicons.org/instagram/7C5E3B" alt="Instagram" class="w-6 h-6">
+        </a>
+    </div>
+    
+    <!-- Built With Text -->
+    <p class="text-[#7C5E3B] text-sm mb-8">
+        This site is built using Django.
+    </p>
+    
+    <!-- Decorative Footer Image -->
+    <img src="{% static 'img/vectors/footer.png' %}" alt="Footer decoration" class="w-full block -mt-30">
+</footer>

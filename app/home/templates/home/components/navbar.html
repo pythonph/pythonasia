@@ -1,0 +1,104 @@
+{% load static %}
+
+<div class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+        <li>
+          <a>About</a>
+          <ul class="p-2">
+            <li><a href="#">About the Conference</a></li>
+            <li><a href="#">About PythonAsia</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Venue</a></li>
+          </ul>
+        </li>
+        <li>
+          <a>Get Involved</a>
+          <ul class="p-2">
+            <li><a href="#">Become a Sponsor</a></li>
+            <li><a href="#">Volunteer</a></li>
+            <li><a href="#">Speak at the Event</a></li>
+          </ul>
+        </li>
+        <li>
+          <a>Policies</a>
+          <ul class="p-2">
+            <li><a href="#">Code of Conduct</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </li>
+        <li>
+          <a>Attend</a>
+          <ul class="p-2">
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Accommodation</a></li>
+            <li><a href="#">Travel Info</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <a class="btn btn-ghost text-xl">
+      <img src="{% static 'img/logo.png' %}" alt="PythonAsia 2026" class="h-8 w-auto">
+    </a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li>
+        <details>
+          <summary>About</summary>
+          <ul class="p-2 bg-base-100 rounded-box z-[1] w-52 shadow">
+            <li><a href="#">About the Conference</a></li>
+            <li><a href="#">About PythonAsia</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Venue</a></li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary>Get Involved</summary>
+          <ul class="p-2 bg-base-100 rounded-box z-[1] w-52 shadow">
+            <li><a href="#">Become a Sponsor</a></li>
+            <li><a href="#">Volunteer</a></li>
+            <li><a href="#">Speak at the Event</a></li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary>Policies</summary>
+          <ul class="p-2 bg-base-100 rounded-box z-[1] w-52 shadow">
+            <li><a href="#">Code of Conduct</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary>Attend</summary>
+          <ul class="p-2 bg-base-100 rounded-box z-[1] w-52 shadow">
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Accommodation</a></li>
+            <li><a href="#">Travel Info</a></li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </div>
+  <div class="navbar-end">
+    <a href="#" class="btn btn-primary btn-square lg:btn-wide">
+      <span class="hidden lg:inline-block material-symbols-outlined">sell</span>
+      <span class="lg:inline">Get Tickets</span>
+    </a>
+  </div>
+</div>

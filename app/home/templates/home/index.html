@@ -2,7 +2,10 @@
 {% load static %}
 
 {% block content %}
-<div class="min-h-screen" style="background-image: url("{% static 'img/background.png' %}");">
+<div class="min-h-screen" style="background-image: url('{% static 'img/background.png' %}');">
+    <!-- Navbar -->
+    {% include "home/components/navbar.html" %}
+
     <main>
         <section id="hero" class="text-white text-center flex items-center pt-20">
             <div class="container mx-auto px-6 bg-cover w-[959.82px] hero-content">
@@ -19,15 +22,36 @@
         </section>
     </main>
 
-    <footer class="relative w-full h-[950px] mt-[-20px] z-0">
-        <img src="{% static 'img/pytonio.svg' %}" alt="Left Snake" class="absolute left-0 bottom-80 w-[670px]">
-        <img src="{% static 'img/pytria.svg' %}" alt="Right Snake" class="absolute right-0 bottom-80 w-[670px]">
-        <img src="{% static 'img/pot.svg' %}" alt="Pot" class="absolute bottom-80 left-1/2 ml-[-70px] -translate-x-1/2 w-[574.49px] z-10">
-        <img src="{% static 'img/base.svg' %}" alt="Bottom Base" class="absolute bottom-0 left-0 right-0 w-full z-0">
-        <div class="absolute bottom-40 w-full text-center z-30">
-            <h3 class="text-white font-bold">CO-ORGANIZED BY</h3>
-            <img class="mx-auto h-[100px]" src="{% static 'img/coorganizers.png' %}">
-        </div>
-    </footer>
+    <!-- Section Break -->
+    <div class="w-full py-0 my-0 z-10 -mb-25">
+        <img src="{% static 'img/vectors/section-break-1.svg' %}" alt="Section Break" class="w-full block">
+    </div>
+
+    <!-- About Us Section -->
+    {% include "home/sections/about-us.html" %}
+
+    <!-- Section Break -->
+    <div class="w-full py-0 my-0  z-10 -mt-25">
+        <img src="{% static 'img/vectors/section-break-2.svg' %}" alt="Section Break" class="w-full block">
+    </div>
+
+    <!-- Conference at a Glance Section -->
+    {% include "home/sections/conference-at-a-glance.html" %}
+
+    <!-- Why Python Section -->
+    {% include "home/sections/why-python.html" %}
+
+    <!-- What is PyCon Section -->
+    {% include "home/sections/what-is-python-asia.html" %}
+
+    <!-- Sponsors Section -->
+    {% include "home/sections/sponsor-section.html" %}
+
+    <!-- Code of Conduct Section -->
+    {% include "home/sections/code-of-conduct.html" %}
+    
+    <!-- Footer Section -->
+    {% include "home/sections/footer.html" %}
+
 </div>
 {% endblock %}

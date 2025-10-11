@@ -18,6 +18,7 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "django-browser-reload>=1.21.0",
     "pre-commit>=4.3.0",
     "ruff>=0.13.3",
 ]
