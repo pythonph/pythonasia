@@ -108,7 +108,6 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
-                "config.context_processors.static_version",
             ],
         },
     },
@@ -180,15 +179,8 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 STATIC_ROOT = BASE_DIR / "staticfiles"
 STATIC_URL = "/static/"
 
-# Cache busting version - increment this when CSS/JS changes
-STATIC_VERSION = str(int(time.time()))  # or manually set like "1.0.1"
-
 MEDIA_ROOT = BASE_DIR / "mediafiles"
 MEDIA_URL = "/media/"
-
-# WhiteNoise configuration for media files
-WHITENOISE_USE_FINDERS = True
-WHITENOISE_AUTOREFRESH = True
 
 # Django Tailwind CLI
 # https://django-tailwind-cli.readthedocs.io/latest/
