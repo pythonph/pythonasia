@@ -8,7 +8,7 @@
 
     <main>
         <section id="hero" class="text-white text-center flex items-center pt-20">
-            <div class="container mx-auto px-6 bg-cover w-[959.82px] hero-content">
+            <div class="container mx-auto px-6 bg-cover w-[960px] hero-content">
             <div class="flex flex-col items-center space-y-8">
                 <img src="{% static 'img/vectors/kalinga-baybayin.svg' %}" alt="kliN" class="w-[189px] h-auto">
                 <img src="{% static 'img/kalinga.png' %}" alt="Kalinga" class="w-[336.34px] h-auto">
@@ -43,6 +43,12 @@
 
     <!-- What is PyCon Section -->
     {% include "home/sections/what-is-python-asia.html" %}
+
+    <!-- Announcement Section -->
+    {% include "home/sections/announcement-section.html" %}
+
+    <!-- When? Where? Section -->
+    {% include "home/sections/when-where-section.html" %}
 
     <!-- Sponsors Section -->
     {% include "home/sections/sponsor-section.html" %}
