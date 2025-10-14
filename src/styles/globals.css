@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+@font-face {
+  font-family: 'bantayog';
+  src: url('/static/fonts/Bantayog-Light.otf') format('opentype');
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'bantayog';
+  src: url('/static/fonts/Bantayog-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'bantayog';
+  src: url('/static/fonts/Bantayog-Semilight.otf') format('opentype');
+  font-weight: 600;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'niwanguno';
+  src: url('/static/fonts/NiwangUno-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'td_pinoy';
+  src: url('/static/fonts/TD_Pinoy.otf') format('opentype');
+  font-weight: 500;
+  font-display: swap;
+}
+
+
+.font-bantayog {
+  font-family: 'bantayog', sans-serif;
+}
+
+.font-niwanguno {
+  font-family: 'niwanguno', sans-serif;
+}
+
+.font-td_pinoy {
+  font-family: 'td_pinoy', sans-serif;
+}
+
+.font-nunito {
+  font-family: 'Nunito', sans-serif;
+}
