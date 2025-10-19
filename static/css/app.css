@@ -9,7 +9,6 @@
     monospace;
     --color-white: #fff;
     --spacing: 0.25rem;
-    --container-md: 28rem;
     --container-2xl: 42rem;
     --container-3xl: 48rem;
     --container-4xl: 56rem;
@@ -34,6 +33,7 @@
     --text-5xl--line-height: 1;
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
+    --font-weight-light: 300;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
@@ -465,6 +465,9 @@
         width: unset;
       }
     }
+    .prose & {
+      text-decoration-line: none;
+    }
     @layer daisyui.component {
       display: inline-flex;
       flex-shrink: 0;
@@ -516,9 +519,6 @@
       0 4px 3px -2px color-mix(in oklab, var(--btn-bg) calc(var(--depth) * 30%), #0000);
       }
       --btn-noise: var(--fx-noise);
-      .prose & {
-        text-decoration-line: none;
-      }
       @media (hover: hover) {
         &:hover {
           --btn-bg: var(--btn-color, var(--color-base-200));
@@ -766,20 +766,6 @@
       }
     }
   }
-  .navbar {
-    @layer daisyui.component {
-      display: flex;
-      width: 100%;
-      align-items: center;
-      padding: 0.5rem;
-      min-height: 4rem;
-    }
-    :where(&) {
-      @layer daisyui.modifier {
-        position: relative;
-      }
-    }
-  }
   .absolute {
     position: absolute;
   }
@@ -900,27 +886,12 @@
   .mb-20 {
     margin-bottom: calc(var(--spacing) * 20);
   }
-  .navbar-end {
-    @layer daisyui.component {
-      display: inline-flex;
-      align-items: center;
-      width: 50%;
-      justify-content: flex-end;
-    }
-  }
   .navbar-start {
     @layer daisyui.component {
       display: inline-flex;
       align-items: center;
       width: 50%;
       justify-content: flex-start;
-    }
-  }
-  .navbar-center {
-    @layer daisyui.component {
-      display: inline-flex;
-      align-items: center;
-      flex-shrink: 0;
     }
   }
   .block {
@@ -960,6 +931,9 @@
   .h-48 {
     height: calc(var(--spacing) * 48);
   }
+  .h-\[2px\] {
+    height: 2px;
+  }
   .h-auto {
     height: auto;
   }
@@ -987,6 +961,12 @@
   .w-52 {
     width: calc(var(--spacing) * 52);
   }
+  .w-\[20px\] {
+    width: 20px;
+  }
+  .w-\[24px\] {
+    width: 24px;
+  }
   .w-\[45\%\] {
     width: 45%;
   }
@@ -1004,6 +984,9 @@
   }
   .w-\[960px\] {
     width: 960px;
+  }
+  .w-\[1260px\] {
+    width: 1260px;
   }
   .w-auto {
     width: auto;
@@ -1028,6 +1011,9 @@
   }
   .max-w-\[127px\] {
     max-width: 127px;
+  }
+  .max-w-\[233px\] {
+    max-width: 233px;
   }
   .max-w-\[350px\] {
     max-width: 350px;
@@ -1074,6 +1060,9 @@
   .justify-center {
     justify-content: center;
   }
+  .justify-end {
+    justify-content: flex-end;
+  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
@@ -1085,6 +1074,9 @@
   }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
+  }
+  .gap-7 {
+    gap: calc(var(--spacing) * 7);
   }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
@@ -1163,9 +1155,6 @@
   .rounded-3xl {
     border-radius: var(--radius-3xl);
   }
-  .rounded-\[12px\] {
-    border-radius: 12px;
-  }
   .rounded-\[24px\] {
     border-radius: 24px;
   }
@@ -1209,6 +1198,9 @@
   }
   .bg-base-100 {
     background-color: var(--color-base-100);
+  }
+  .bg-transparent {
+    background-color: transparent;
   }
   .bg-white {
     background-color: var(--color-white);
@@ -1255,6 +1247,9 @@
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
+  .px-8 {
+    padding-inline: calc(var(--spacing) * 8);
+  }
   .px-16 {
     padding-inline: calc(var(--spacing) * 16);
   }
@@ -1263,6 +1258,12 @@
   }
   .py-0 {
     padding-block: calc(var(--spacing) * 0);
+  }
+  .py-1\.5 {
+    padding-block: calc(var(--spacing) * 1.5);
+  }
+  .py-3\.5 {
+    padding-block: calc(var(--spacing) * 3.5);
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
@@ -1279,20 +1280,20 @@
   .py-\[27px\] {
     padding-block: 27px;
   }
+  .pt-8 {
+    padding-top: calc(var(--spacing) * 8);
+  }
   .pt-20 {
     padding-top: calc(var(--spacing) * 20);
+  }
+  .pt-\[170px\] {
+    padding-top: 170px;
   }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
   }
   .pb-10 {
     padding-bottom: calc(var(--spacing) * 10);
-  }
-  .pb-\[40\[x\]\] {
-    padding-bottom: 40[x];
-  }
-  .pb-\[40px\] {
-    padding-bottom: 40px;
   }
   .pb-\[56\.25\%\] {
     padding-bottom: 56.25%;
@@ -1344,9 +1345,6 @@
   .text-\[28px\] {
     font-size: 28px;
   }
-  .text-\[32px\] {
-    font-size: 32px;
-  }
   .text-\[35px\] {
     font-size: 35px;
   }
@@ -1372,6 +1370,10 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .font-light {
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
   }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
@@ -1402,9 +1404,6 @@
   .text-\[\#D87532\] {
     color: #D87532;
   }
-  .text-\[\#E8893D\] {
-    color: #E8893D;
-  }
   .text-\[\#F26D1D\] {
     color: #F26D1D;
   }
@@ -1429,10 +1428,6 @@
   }
   .shadow-\[0_10px_20px_0_rgba\(0\,0\,0\,0\.05\)\] {
     --tw-shadow: 0 10px 20px 0 var(--tw-shadow-color, rgba(0,0,0,0.05));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .shadow-sm {
-    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .btn-ghost {
@@ -1474,7 +1469,7 @@
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
   .btn-primary {
-    @layer daisyui.modifier {
+    @layer daisyui.modifier.color {
       --btn-color: var(--color-primary);
       --btn-fg: var(--color-primary-content);
     }
@@ -1547,11 +1542,6 @@
       display: inline;
     }
   }
-  .lg\:inline-block {
-    @media (width >= 64rem) {
-      display: inline-block;
-    }
-  }
   .lg\:btn-wide {
     @media (width >= 64rem) {
       @layer daisyui.modifier {
@@ -1573,47 +1563,122 @@
   }
 }
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+:root {
+  --orange-1: #BD4B06;
+  --orange-2: #F26D1D;
+  --orange-3: #FFA218;
+  --white: #FFFFFF;
+  --offwhite-1: #FFF9F2;
+  --offwhite-2: #FFF4E6;
+  --offwhite-3: #FFF3E5;
+  --brown-1: #84400F;
+  --brown-2: #7C5E3B;
+  --brown-3: #B04301;
+  --bg-cream-1: #F8EBE5;
+  --bg-cream-2: #FFE7D5;
+  --bg-cream-3: #F8F0E5;
+  --stroke-1: #C9AC8A;
+}
 @font-face {
-  font-family: 'bantayog';
+  font-family: 'Bantayog';
   src: url('/static/fonts/Bantayog-Light.otf') format('opentype');
   font-weight: 300;
   font-display: swap;
 }
 @font-face {
-  font-family: 'bantayog';
+  font-family: 'Bantayog';
   src: url('/static/fonts/Bantayog-Regular.otf') format('opentype');
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
-  font-family: 'bantayog';
+  font-family: 'Bantayog';
   src: url('/static/fonts/Bantayog-Semilight.otf') format('opentype');
   font-weight: 600;
   font-display: swap;
 }
 @font-face {
-  font-family: 'niwanguno';
+  font-family: 'Niwanguno';
   src: url('/static/fonts/NiwangUno-Regular.otf') format('opentype');
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
-  font-family: 'td_pinoy';
+  font-family: 'TD Pinoy';
   src: url('/static/fonts/TD_Pinoy.otf') format('opentype');
   font-weight: 500;
   font-display: swap;
 }
 .font-bantayog {
-  font-family: 'bantayog', sans-serif;
+  font-family: 'Bantayog', sans-serif;
 }
 .font-niwanguno {
-  font-family: 'niwanguno', sans-serif;
+  font-family: 'Niwanguno', sans-serif;
 }
 .font-td_pinoy {
-  font-family: 'td_pinoy', sans-serif;
+  font-family: 'TD Pinoy ', sans-serif;
 }
 .font-nunito {
   font-family: 'Nunito', sans-serif;
+}
+.bg-orange-1 {
+  background-color: var(--orange-1);
+}
+.bg-orange-2 {
+  background-color: var(--orange-2);
+}
+.bg-white {
+  background-color: var(--white);
+}
+.bg-offwhite-1 {
+  background-color: var(--offwhite-1);
+}
+.bg-offwhite-2 {
+  background-color: var(--offwhite-2);
+}
+.bg-offwhite-3 {
+  background-color: var(--offwhite-3);
+}
+.bg-cream-1 {
+  background-color: var(--bg-cream-1);
+}
+.bg-cream-2 {
+  background-color: var(--bg-cream-2);
+}
+.bg-cream-3 {
+  background-color: var(--bg-cream-3);
+}
+.bg-transparent {
+  background-color: transparent;
+}
+.text-orange-2 {
+  color: var(--orange-2);
+}
+.text-orange-3 {
+  color: var(--orange-3);
+}
+.text-brown-1 {
+  color: var(--brown-1);
+}
+.text-brown-2 {
+  color: var(--brown-2);
+}
+.text-brown-3 {
+  color: var(--brown-3);
+}
+.text-white {
+  color: var(--white);
+}
+.border-stroke-1 {
+  border-color: var(--stroke-1);
+}
+.bg-primary-btn {
+  background-color: var(--orange-2);
+  color: var(--white);
+}
+.bg-secondary-btn {
+  background-color: var(--white);
+  color: var(--brown-1);
 }
 :root {
   --color-primary: #f26d1d;
@@ -1622,6 +1687,9 @@ body {
   background-color: #fff9f2;
   color: #7c5e3b;
   font-size: 24px;
+}
+.test {
+  padding: 500px;
 }
 @layer base {
   :where(:root),:root:has(input.theme-controller[value=light]:checked),[data-theme=light] {
@@ -1778,34 +1846,110 @@ body {
   }
 }
 @layer base {
-  :root:has( .modal-open, .modal[open], .modal:target, .modal-toggle:checked, .drawer:not([class*="drawer-open"]) > .drawer-toggle:checked ) {
+  :root:has(.modal-open, .modal[open], .modal:target, .modal-toggle:checked) {
     overflow: hidden;
+    --page-has-backdrop: 1;
+  }
+  :root:has(.drawer:not([class*="drawer-open"]) > .drawer-toggle:checked) {
+    overflow: hidden;
+    --page-has-backdrop: 1;
+  }
+  :root:has(.sm\:drawer-open > .drawer-toggle:checked) {
+    @media (width < 40rem) {
+      overflow: hidden;
+    }
+    @media (width < 40rem) {
+      --page-has-backdrop: 1;
+    }
+  }
+  :root:has(.md\:drawer-open > .drawer-toggle:checked) {
+    @media (width < 48rem) {
+      overflow: hidden;
+    }
+    @media (width < 48rem) {
+      --page-has-backdrop: 1;
+    }
+  }
+  :root:has(.lg\:drawer-open > .drawer-toggle:checked) {
+    @media (width < 64rem) {
+      overflow: hidden;
+    }
+    @media (width < 64rem) {
+      --page-has-backdrop: 1;
+    }
+  }
+  :root:has(.xl\:drawer-open > .drawer-toggle:checked) {
+    @media (width < 80rem) {
+      overflow: hidden;
+    }
+    @media (width < 80rem) {
+      --page-has-backdrop: 1;
+    }
+  }
+  :root:has(.\32xl\:drawer-open > .drawer-toggle:checked) {
+    @media (width < 96rem) {
+      overflow: hidden;
+    }
+    @media (width < 96rem) {
+      --page-has-backdrop: 1;
+    }
+  }
+  :root:has(.max-sm\:drawer-open > .drawer-toggle:checked) {
+    @media (width >= 40rem) {
+      overflow: hidden;
+    }
+    @media (width >= 40rem) {
+      --page-has-backdrop: 1;
+    }
+  }
+  :root:has(.max-md\:drawer-open > .drawer-toggle:checked) {
+    @media (width >= 48rem) {
+      overflow: hidden;
+    }
+    @media (width >= 48rem) {
+      --page-has-backdrop: 1;
+    }
+  }
+  :root:has(.max-lg\:drawer-open > .drawer-toggle:checked) {
+    @media (width >= 64rem) {
+      overflow: hidden;
+    }
+    @media (width >= 64rem) {
+      --page-has-backdrop: 1;
+    }
+  }
+  :root:has(.max-xl\:drawer-open > .drawer-toggle:checked) {
+    @media (width >= 80rem) {
+      overflow: hidden;
+    }
+    @media (width >= 80rem) {
+      --page-has-backdrop: 1;
+    }
+  }
+  :root:has(.max-2xl\:drawer-open > .drawer-toggle:checked) {
+    @media (width >= 96rem) {
+      overflow: hidden;
+    }
+    @media (width >= 96rem) {
+      --page-has-backdrop: 1;
+    }
   }
 }
 @layer base {
-  :where( :root:has( .modal-open, .modal[open], .modal:target, .modal-toggle:checked, .drawer:not(.drawer-open) > .drawer-toggle:checked ) ) {
-    scrollbar-gutter: stable;
-    background-image: linear-gradient(var(--color-base-100), var(--color-base-100));
-    --root-bg: var(--color-base-100);
+  :root:has( .modal-open, .modal[open], .modal:target, .modal-toggle:checked, .drawer:not(.drawer-open) > .drawer-toggle:checked ) {
+    background-image: linear-gradient(var(--root-bg), var(--root-bg));
+    background-color: var(--root-bg);
     @supports (color: color-mix(in lab, red, red)) {
-      --root-bg: color-mix(in srgb, var(--color-base-100), oklch(0% 0 0) 40%);
+      background-color: color-mix( in srgb, var(--root-bg), oklch(0% 0 0) calc(var(--page-has-backdrop, 0) * 40%) );
     }
-  }
-  :where(.modal[open], .modal-open, .modal-toggle:checked + .modal):not(.modal-start, .modal-end) {
+    animation: set-page-has-scroll forwards;
+    animation-timeline: scroll();
     scrollbar-gutter: stable;
+    scrollbar-gutter: if(style(--page-has-scroll: 1): stable; else: unset);
   }
-  @supports (width: if(else: 1px)) and (animation-timeline: scroll()) {
-    :root {
-      animation: set-page-has-scroll forwards;
-      animation-timeline: scroll();
-    }
-    @keyframes set-page-has-scroll {
-      0%, to {
-        --page-has-scroll: 1;
-      }
-    }
-    :where( :root:has( .modal-open, .modal[open], .modal:target, .modal-toggle:checked, .drawer:not(.drawer-open) > .drawer-toggle:checked ) ) {
-      scrollbar-gutter: if(style(--page-has-scroll: 1): stable; else: unset);
+  @keyframes set-page-has-scroll {
+    0%, to {
+      --page-has-scroll: 1;
     }
   }
 }
@@ -1813,6 +1957,9 @@ body {
   :root, [data-theme] {
     background-color: var(--root-bg, var(--color-base-100));
     color: var(--color-base-content);
+  }
+  :where(:root, [data-theme]) {
+    --root-bg: var(--color-base-100);
   }
 }
 @keyframes rating {
