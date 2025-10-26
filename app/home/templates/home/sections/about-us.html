@@ -8,75 +8,133 @@
             <h2 class="text-5xl md:text-6xl font-bold mb-12 font-td_pinoy">What is PythonAsia?</h2>
         </div>
         <!-- Main Content -->
-        <div class="grid md:grid-cols-2 gap-12 items-start mb-20">
-            <div class="text-left">
-                <h3 class="text-2xl font-bold mb-6 uppercase font-bantayog leading-[130%]">
-                    The largest gathering of Python
-                    <br />
-                    developers in the Philippines with a
-                    <br />
-                    global experience 🇵🇭🌎
-                </h3>
-                <p class="text-base leading-relaxed font-nunito">
-                    PyCon is a volunteer-run, non-profit conference for the Python
-                    community, held worldwide since starting in the US. In the
-                    Philippines, PyCon PH has been organized annually since
-                    2012, featuring local and international speakers for a globally
-                    enriching experience.
-                </p>
-            </div>
-            <div class="flex justify-center items-center">
-                <div class="relative">
-                    <img src="{% static 'img/about-us-photo.png' %}"
-                         alt="PyCon PH 2025 Conference">
-                </div>
+        <div class="text-center px-8 md:px-16 lg:px-24">
+            <h3 class="text-2xl font-bold mb-6 uppercase font-bantayog">
+                The Flagship Gathering for Python Enthusiasts Across Asia - Uniting Diverse Communities across the region
+            </h3>
+            <p class="text-base leading-relaxed font-nunito">
+                PythonAsia is the flagship gathering for Python enthusiasts across Asia. It gathers developers, students, educators, researchers, and industry leaders to collaborate, exchange ideas, and build lasting connections. The conference is hosted annually in different countries and was previously known as PyCon APAC. Past hosts include Singapore, Japan, Taiwan, South Korea, Malaysia, Thailand, Indonesia, and the Philippines,
+                <br />
+                <br />
+                The goal of PyCon APAC has always been to create a space for exploring, discussing, and applying Python and its surrounding technologies across the Asia-Pacific region. We aim to bring together Python users from all walks of life—developers, data professionals, engineers, researchers, educators, students, entrepreneurs, and enthusiasts—to collaborate, share knowledge, and spark new ideas.
+                <br />
+                <br />
+                Starting 2026, the event takes on its new identity as PythonAsia, co-organized with the Python Asia Organization (PAO). PythonAsia 2026 will be proudly hosted in the Philippines once again, building on the success of PyCon APAC 2025 and with the continued support of the local Python community through PythonPH in collaboration with PAO.
+                <br />
+                <br />
+                Like PyCon APAC, PythonAsia expands the local Python community’s reach to an international audience, creating opportunities for deeper collaboration and knowledge sharing across diverse cultures and industries throughout the Asia region.
+                <br />
+                <br />
+            </p>
+        </div>
+        <div class="flex justify-center items-center mb-12">
+            <div class="relative">
+                <img src="{% static 'img/about-us-photo.png' %}"
+                     alt="PyCon PH 2025 Conference">
             </div>
         </div>
-        {% comment %}
         <!-- 3 Days Section -->
         <div class="mb-12">
             <h3 class="text-5xl font-bold mb-8 font-td_pinoy">3 Days, Endless Possibilities</h3>
             <p class="text-lg leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Lorem ipsum dolor sit amet, consectetur 
-                adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
+                Dive into three days of learning, building, and connecting with the Python community. From inspiring talks to hands-on sprints, PythonAsia is where ideas spark, skills grow, and collaborations begin. Whether you're a first-time attendee or a seasoned contributor, there's something here for everyone.
             </p>
         </div>
         <!-- Features Grid -->
-        <div class="grid md:grid-cols-3 gap-8 mb-16">
-            <!-- World-Class Keynotes -->
+        <div class="grid md:grid-cols-2 gap-8 mb-16">
+            <!-- Inspiring Keynotes -->
             <div>
                 <div class="inline-block p-4 mb-4">
-                    <img src="{% static 'img/vectors/conversation-icon.svg' %}" />
+                    <img src="{% static 'img/vectors/conversation-icon.svg' %}"
+                         alt="Inspiring Keynotes" />
                 </div>
-                <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">World-Class Keynotes</h4>
-                <p class="text-sm font-nunito">From core contributors, startup founders, and AI pioneers.</p>
-            </div>
-            <!-- Multi-Track & Live Labs -->
-            <div>
-                <div class="inline-block p-4 mb-4">
-                    <img src="{% static 'img/vectors/star-icon.svg' %}" />
-                </div>
-                <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Multi-Track & Live Labs</h4>
-                <p class="text-sm font-nunito">Covering AI/ML, data science, DevOps, and open source.</p>
-            </div>
-            <!-- Hands-On Sprints -->
-            <div>
-                <div class="inline-block p-4 mb-4">
-                    <img src="{% static 'img/vectors/hands-on-icon.svg' %}" />
-                </div>
-                <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Hands-On Sprints</h4>
+                <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Inspiring Keynotes</h4>
                 <p class="text-sm font-nunito">
-                    Code with maintainers (bring your laptop), then connect at our career expo & sponsor zone.
+                    Hear inspiring talks from core contributors, community leaders, and innovators shaping Python across Asia and beyond
+                </p>
+            </div>
+            <!-- Talks & Lightning Talks -->
+            <div>
+                <div class="inline-block p-4 mb-4">
+                    <img src="{% static 'img/vectors/conversation-icon.svg' %}"
+                         alt="Talks & Lightning Talks" />
+                </div>
+                <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Talks & Lightning Talks</h4>
+                <p class="text-sm font-nunito">
+                    From deep-dive sessions to quick, punchy insights, learn from diverse voices across the Python community.
+                </p>
+            </div>
+            <!-- Community Gatherings -->
+            <div>
+                <div class="inline-block p-4 mb-4">
+                    <img src="{% static 'img/vectors/hands-on-icon.svg' %}"
+                         alt="Community Gatherings" />
+                </div>
+                <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Community Gatherings</h4>
+                <p class="text-sm font-nunito">
+                    Join special sessions like the PyLadies Lunch, Open Spaces, and Group Lunch—designed to spark conversations and build connections.
+                </p>
+            </div>
+            <!-- Multi-Track & Live Workshops -->
+            <div>
+                <div class="inline-block p-4 mb-4">
+                    <img src="{% static 'img/vectors/star-icon.svg' %}"
+                         alt="Multi-Track & Live Workshops" />
+                </div>
+                <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Multi-Track & Live Workshops</h4>
+                <p class="text-sm font-nunito">
+                    Dive into AI/ML, Data Science, DevOps, Open Source, and region-specific use cases powering real-world impact.
+                </p>
+            </div>
+            <!-- Career Mixer -->
+            <div>
+                <div class="inline-block p-4 mb-4">
+                    <img src="{% static 'img/vectors/star-icon.svg' %}" alt="Career Mixer" />
+                </div>
+                <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Career Mixer</h4>
+                <p class="text-sm font-nunito">
+                    Meet potential employers, collaborators, and mentors in a relaxed, networking-focused environment.
+                </p>
+            </div>
+            <!-- Sponsor Booths & Stamp Quest -->
+            <div>
+                <div class="inline-block p-4 mb-4">
+                    <img src="{% static 'img/vectors/star-icon.svg' %}"
+                         alt="Sponsor Booths & Stamp Quest" />
+                </div>
+                <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Sponsor Booths & Stamp Quest</h4>
+                <p class="text-sm font-nunito">
+                    Explore sponsor showcases, discover new opportunities, and complete our signature Stamp Collection Quest for fun tokens, prizes, and new connections.
+                </p>
+            </div>
+            <!-- Open Source Sprints -->
+            <div>
+                <div class="inline-block p-4 mb-4">
+                    <img src="{% static 'img/vectors/star-icon.svg' %}"
+                         alt="Open Source Sprints" />
+                </div>
+                <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Open Source Sprints</h4>
+                <p class="text-sm font-nunito">
+                    Team up with maintainers and peers (bring your laptop!) to contribute to open source, then connect at our career fair.
+                </p>
+            </div>
+            <!-- Education Summit -->
+            <div>
+                <div class="inline-block p-4 mb-4">
+                    <img src="{% static 'img/vectors/star-icon.svg' %}" alt="Education Summit" />
+                </div>
+                <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Education Summit</h4>
+                <p class="text-sm font-nunito">
+                    Co-organized with De La Salle University (DLSU), this special track brings together educators, students, and practitioners to explore how Python is shaping learning and research in Asia
                 </p>
             </div>
         </div>
-        {% endcomment %}
         <!-- Call to Action -->
         <div class="text-center bg-[#B04301] p-[30px] pb-10 rounded-2xl">
             <p class="text-lg mb-2 uppercase tracking-wide font-bantayog">
-                Join <strong>200+ builders, students, and founders</strong>, for <strong>48 hours</strong> of
+                Join hundreds of developers, students, educators, researchers, and community leaders from across Asia for 3 days of
             </p>
-            <h3 class="text-5xl md:text-6xl font-bold uppercase font-td_pinoy">Code, Coffee, and Collaboration.</h3>
+            <h3 class="text-5xl md:text-6xl font-bold uppercase font-td_pinoy">Learning, Inspiration, and Connection</h3>
         </div>
     </div>
 </section>
