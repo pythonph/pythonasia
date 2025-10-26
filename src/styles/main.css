@@ -89,7 +89,10 @@ body {
 }
 
 .font-nunito {
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito", regular, sans-serif;
+  weight: 400;
+  size: 18px;
+  line-height: 1.5;
 }
 
 .bg-orange-1 {
