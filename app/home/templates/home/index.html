@@ -1,63 +1,61 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block content %}
-<div class="min-h-screen" style="background-image: url('{% static 'img/background.png' %}');">
-    <!-- Navbar -->
-    {% include "home/components/navbar.html" %}
-
-    <main>
-        <section id="hero" class="text-white text-center flex items-center pt-[170px]">
-            <div class="container mx-auto px-6 bg-cover w-[960px] hero-content">
-            <div class="flex flex-col items-center space-y-8">
-                <img src="{% static 'img/vectors/kalinga-baybayin.svg' %}" alt="kliN" class="w-[189px] h-auto">
-                <img src="{% static 'img/kalinga.png' %}" alt="Kalinga" class="w-[336.34px] h-auto">
-                <img src="{% static 'img/vectors/python-asia-branding.png' %}" alt="PythonAsia 2026" class="w-[635px] h-auto">
-                <div class="text-center text-[#7C5E3B] z-30">
-                    Nurturing a community of care, compassion, and growth.<br/>
-                    The same heart of PyCon APAC, now as PythonAsia.
+    <div class="min-h-screen"
+         style="background-image: url('{% static 'img/background.png' %}')">
+        <!-- Navbar -->
+        {% include "home/components/navbar.html" %}
+        <main>
+            <section id="hero" class="text-white text-center flex items-center pt-[170px]">
+                <div class="container mx-auto px-6 bg-cover w-[960px] hero-content">
+                    <div class="flex flex-col items-center space-y-8">
+                        <img src="{% static 'img/vectors/kalinga-baybayin.svg' %}"
+                             alt="kliN"
+                             class="w-[189px] h-auto">
+                        <img src="{% static 'img/kalinga.png' %}"
+                             alt="Kalinga"
+                             class="w-[336.34px] h-auto">
+                        <img src="{% static 'img/vectors/python-asia-branding.png' %}"
+                             alt="PythonAsia 2026"
+                             class="w-[635px] h-auto">
+                        <div class="text-center text-[#7C5E3B] z-30">
+                            Nurturing a community of care, compassion, and growth.
+                            <br />
+                            The same heart of PyCon APAC, now as PythonAsia.
+                        </div>
+                    </div>
                 </div>
-            </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Section Break -->
-    <div class="w-full py-0 my-0 z-10 -mb-25">
-        <img src="{% static 'img/vectors/section-break-1.svg' %}" alt="Section Break" class="w-full block">
+            </section>
+        </main>
+        <!-- Section Break -->
+        <div class="w-full py-0 my-0 z-10 -mb-25">
+            <img src="{% static 'img/vectors/section-break-1.svg' %}"
+                 alt="Section Break"
+                 class="w-full block">
+        </div>
+        <!-- About Us Section -->
+        {% include "home/sections/about-us.html" %}
+        <!-- Section Break -->
+        <div class="w-full py-0 my-0  z-10 -mt-25">
+            <img src="{% static 'img/vectors/section-break-2.svg' %}"
+                 alt="Section Break"
+                 class="w-full block">
+        </div>
+        <!-- Conference at a Glance Section -->
+        {% include "home/sections/conference-at-a-glance.html" %}
+        <!-- Why Python Section -->
+        {% include "home/sections/why-python.html" %}
+        <!-- What is PyCon Section -->
+        {% include "home/sections/what-is-python-asia.html" %}
+        <!-- Announcement Section -->
+        {% include "home/sections/announcement-section.html" %}
+        <!-- When? Where? Section -->
+        {% include "home/sections/when-where-section.html" %}
+        <!-- Sponsors Section -->
+        {% include "home/sections/sponsor-section.html" %}
+        <!-- Code of Conduct Section -->
+        {% include "home/sections/code-of-conduct.html" %}
+        <!-- Footer Section -->
+        {% include "home/sections/footer.html" %}
     </div>
-
-    <!-- About Us Section -->
-    {% include "home/sections/about-us.html" %}
-
-    <!-- Section Break -->
-    <div class="w-full py-0 my-0  z-10 -mt-25">
-        <img src="{% static 'img/vectors/section-break-2.svg' %}" alt="Section Break" class="w-full block">
-    </div>
-
-    <!-- Conference at a Glance Section -->
-    {% include "home/sections/conference-at-a-glance.html" %}
-
-    <!-- Why Python Section -->
-    {% include "home/sections/why-python.html" %}
-
-    <!-- What is PyCon Section -->
-    {% include "home/sections/what-is-python-asia.html" %}
-
-    <!-- Announcement Section -->
-    {% include "home/sections/announcement-section.html" %}
-
-    <!-- When? Where? Section -->
-    {% include "home/sections/when-where-section.html" %}
-
-    <!-- Sponsors Section -->
-    {% include "home/sections/sponsor-section.html" %}
-
-    <!-- Code of Conduct Section -->
-    {% include "home/sections/code-of-conduct.html" %}
-    
-    <!-- Footer Section -->
-    {% include "home/sections/footer.html" %}
-
-</div>
 {% endblock %}

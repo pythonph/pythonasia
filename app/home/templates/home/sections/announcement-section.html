@@ -1,9 +1,6 @@
 {% load static %}
-
-<section
-  id="annoucement"
-  class="py-20 bg-[#FFF9F2]"
->
+{% comment %}
+<section id="annoucement" class="py-20 bg-[#FFF9F2]">
   <div class="w-full max-w-[1160px] mx-auto px-6 flex gap-[30px]">
     <div class="w-[45%] max-w-[510px]">
       <div>
@@ -11,11 +8,7 @@
           Announcement
         </h2>
       </div>
-      <img
-        src="{% static 'img/py_kalinga-pot.png' %}"
-        alt="Python Kalinga Pot"
-        class="w-full max-w-[350px]"
-      />
+      <img src="{% static 'img/py_kalinga-pot.png' %}" alt="Python Kalinga Pot" class="w-full max-w-[350px]" />
     </div>
     <div class="w-[55%] max-w-[620px] flex flex-col gap-4">
       <div class="flex flex-col gap-4">
@@ -72,3 +65,4 @@
     </div>
   </div>
 </section>
+{% endcomment %}

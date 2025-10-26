@@ -1,94 +1,102 @@
 {% load static %}
 <nav class="absolute w-full z-10">
   <div class="relative flex flex-col">
+    {% comment %}
     <div class="bg-orange-1 py-1.5 flex items-center justify-center gap-2">
       <p class="text-white font-nunito text-sm font-semibold">
         👋 Registration for PyCon APAC 2025 is now open!
       </p>
       <div class="w-[20px] h-[2px] bg-white"></div>
       <div>
-        <a
-          class="text-white font-bantayog text-base flex gap-2 items-center"
-          href="#"
-        >
+        <a class="text-white font-bantayog text-base flex gap-2 items-center" href="#">
           <p>RESERVE YOUR SEATS NOW</p>
-          <img
-            src="{% static 'img/vectors/ArrowCircleRight.svg' %}"
-            alt="kliN"
-            class="w-[24px] h-auto"
-          />
+          <img src="{% static 'img/vectors/ArrowCircleRight.svg' %}" alt="kliN" class="w-[24px] h-auto" />
         </a>
       </div>
     </div>
+    {% endcomment %}
     <div class="bg-transparent w-[1260px] mx-auto flex pt-8">
       <div class="navbar-start">
         <div class="dropdown">
-          <div
-            tabindex="0"
-            role="button"
-            class="btn btn-ghost lg:hidden"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 class="h-5 w-5"
+                 fill="none"
+                 viewBox="0 0 24 24"
+                 stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
             </svg>
           </div>
-          <ul
-            tabindex="0"
-            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-          >
+          <ul tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
             <li>
               <a class="font-bantayog">About</a>
               <ul class="p-2">
-                <li><a href="#" class="font-bantayog">About the Conference</a></li>
-                <li><a href="#" class="font-bantayog">About PythonAsia</a></li>
-                <li><a href="#" class="font-bantayog">Team</a></li>
-                <li><a href="#" class="font-bantayog">Venue</a></li>
+                <li>
+                  <a href="#" class="font-bantayog">About the Conference</a>
+                </li>
+                <li>
+                  <a href="#" class="font-bantayog">About PythonAsia</a>
+                </li>
+                <li>
+                  <a href="#" class="font-bantayog">Team</a>
+                </li>
+                <li>
+                  <a href="#" class="font-bantayog">Venue</a>
+                </li>
               </ul>
             </li>
             <li>
               <a class="font-bantayog">Get Involved</a>
               <ul class="p-2">
-                <li><a href="#" class="font-bantayog">Become a Sponsor</a></li>
-                <li><a href="#" class="font-bantayog">Volunteer</a></li>
-                <li><a href="#" class="font-bantayog">Speak at the Event</a></li>
+                <li>
+                  <a href="#" class="font-bantayog">Become a Sponsor</a>
+                </li>
+                <li>
+                  <a href="#" class="font-bantayog">Volunteer</a>
+                </li>
+                <li>
+                  <a href="#" class="font-bantayog">Speak at the Event</a>
+                </li>
               </ul>
             </li>
             <li>
               <a class="font-bantayog">Policies</a>
               <ul class="p-2">
-                <li><a href="#" class="font-bantayog">Code of Conduct</a></li>
-                <li><a href="#" class="font-bantayog">Privacy Policy</a></li>
-                <li><a href="#" class="font-bantayog">Terms & Conditions</a></li>
+                <li>
+                  <a href="#" class="font-bantayog">Code of Conduct</a>
+                </li>
+                <li>
+                  <a href="#" class="font-bantayog">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#" class="font-bantayog">Terms & Conditions</a>
+                </li>
               </ul>
             </li>
             <li>
               <a class="font-bantayog">Attend</a>
               <ul class="p-2">
-                <li><a href="#" class="font-bantayog">Schedule</a></li>
-                <li><a href="#" class="font-bantayog">Speakers</a></li>
-                <li><a href="#" class="font-bantayog">Accommodation</a></li>
-                <li><a href="#" class="font-bantayog">Travel Info</a></li>
+                <li>
+                  <a href="#" class="font-bantayog">Schedule</a>
+                </li>
+                <li>
+                  <a href="#" class="font-bantayog">Speakers</a>
+                </li>
+                <li>
+                  <a href="#" class="font-bantayog">Accommodation</a>
+                </li>
+                <li>
+                  <a href="#" class="font-bantayog">Travel Info</a>
+                </li>
               </ul>
             </li>
           </ul>
         </div>
         <a class="btn btn-ghost text-xl">
-          <img
-            src="{% static 'img/logo.png' %}"
-            alt="PythonAsia 2026"
-            class="h-8 w-auto w-full max-w-[233px]"
-          />
+          <img src="{% static 'img/logo.png' %}"
+               alt="PythonAsia 2026"
+               class="h-8 w-auto w-full max-w-[233px]" />
         </a>
       </div>
       <div class="flex justify-end items-center gap-7 w-full">
@@ -98,10 +106,18 @@
               <details>
                 <summary class="font-bantayog text-xl text-brown-1 font-light">About</summary>
                 <ul class="p-2 bg-base-100 rounded-box z-[1] w-52 shadow">
-                  <li><a href="#" class="font-bantayog">About the Conference</a></li>
-                  <li><a href="#" class="font-bantayog">About PythonAsia</a></li>
-                  <li><a href="#" class="font-bantayog">Team</a></li>
-                  <li><a href="#" class="font-bantayog">Venue</a></li>
+                  <li>
+                    <a href="#" class="font-bantayog">About the Conference</a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-bantayog">About PythonAsia</a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-bantayog">Team</a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-bantayog">Venue</a>
+                  </li>
                 </ul>
               </details>
             </li>
@@ -109,9 +125,15 @@
               <details>
                 <summary class="font-bantayog text-xl text-brown-1 font-light">Get Involved</summary>
                 <ul class="p-2 bg-base-100 rounded-box z-[1] w-52 shadow">
-                  <li><a href="#" class="font-bantayog">Become a Sponsor</a></li>
-                  <li><a href="#" class="font-bantayog">Volunteer</a></li>
-                  <li><a href="#" class="font-bantayog">Speak at the Event</a></li>
+                  <li>
+                    <a href="#" class="font-bantayog">Become a Sponsor</a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-bantayog">Volunteer</a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-bantayog">Speak at the Event</a>
+                  </li>
                 </ul>
               </details>
             </li>
@@ -119,9 +141,15 @@
               <details>
                 <summary class="font-bantayog text-xl text-brown-1 font-light">Policies</summary>
                 <ul class="p-2 bg-base-100 rounded-box z-[1] w-52 shadow">
-                  <li><a href="#" class="font-bantayog">Code of Conduct</a></li>
-                  <li><a href="#" class="font-bantayog">Privacy Policy</a></li>
-                  <li><a href="#" class="font-bantayog">Terms & Conditions</a></li>
+                  <li>
+                    <a href="#" class="font-bantayog">Code of Conduct</a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-bantayog">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-bantayog">Terms & Conditions</a>
+                  </li>
                 </ul>
               </details>
             </li>
@@ -129,20 +157,25 @@
               <details>
                 <summary class="font-bantayog text-xl text-brown-1 font-light">Attend</summary>
                 <ul class="p-2 bg-base-100 rounded-box z-[1] w-52 shadow">
-                  <li><a href="#" class="font-bantayog">Schedule</a></li>
-                  <li><a href="#" class="font-bantayog">Speakers</a></li>
-                  <li><a href="#" class="font-bantayog">Accommodation</a></li>
-                  <li><a href="#" class="font-bantayog">Travel Info</a></li>
+                  <li>
+                    <a href="#" class="font-bantayog">Schedule</a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-bantayog">Speakers</a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-bantayog">Accommodation</a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-bantayog">Travel Info</a>
+                  </li>
                 </ul>
               </details>
             </li>
           </ul>
         </div>
         <div class="">
-          <a
-            href="#"
-            class="btn btn-primary btn-square lg:btn-wide"
-          >
+          <a href="#" class="btn btn-primary btn-square lg:btn-wide">
             <span class="lg:inline font-bantayog py-3.5 px-8 text-xl">Get Tickets</span>
           </a>
         </div>

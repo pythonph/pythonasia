@@ -1,10 +1,7 @@
 @import "tailwindcss";
-@import "./globals.css";
-@plugin "daisyui";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
 
-:root {
-  --color-primary: #f26d1d;
-}
+@plugin "daisyui";
 
 body {
   background-color: #fff9f2;
@@ -12,6 +9,149 @@ body {
   font-size: 24px;
 }
 
-.test{
+.test {
   padding: 500px;
+}
+
+:root {
+  --color-primary: #f26d1d;
+
+  /* === Orange / Accent === */
+  --orange-1: #bd4b06;
+  --orange-2: #f26d1d;
+  --orange-3: #ffa218;
+
+  /* === Neutral === */
+  --white: #ffffff;
+  --offwhite-1: #fff9f2;
+  --offwhite-2: #fff4e6;
+  --offwhite-3: #fff3e5;
+
+  /* === Browns === */
+  --brown-1: #84400f;
+  --brown-2: #7c5e3b;
+  --brown-3: #b04301;
+
+  /* === Light Backgrounds === */
+  --bg-cream-1: #f8ebe5;
+  --bg-cream-2: #ffe7d5;
+  --bg-cream-3: #f8f0e5;
+
+  /* === Stroke / Borders === */
+  --stroke-1: #c9ac8a;
+}
+
+@font-face {
+  font-family: "Bantayog";
+  src: url("/static/fonts/Bantayog-Light.otf") format("opentype");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bantayog";
+  src: url("/static/fonts/Bantayog-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bantayog";
+  src: url("/static/fonts/Bantayog-Semilight.otf") format("opentype");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Niwanguno";
+  src: url("/static/fonts/NiwangUno-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TD Pinoy";
+  src: url("/static/fonts/TD_Pinoy.otf") format("opentype");
+  font-weight: 500;
+  font-display: swap;
+}
+
+.font-bantayog {
+  font-family: "Bantayog", sans-serif;
+}
+
+.font-niwanguno {
+  font-family: "Niwanguno", sans-serif;
+}
+
+.font-td_pinoy {
+  font-family: "TD Pinoy ", sans-serif;
+}
+
+.font-nunito {
+  font-family: "Nunito", sans-serif;
+}
+
+.bg-orange-1 {
+  background-color: var(--orange-1);
+}
+.bg-orange-2 {
+  background-color: var(--orange-2);
+}
+.bg-white {
+  background-color: var(--white);
+}
+.bg-offwhite-1 {
+  background-color: var(--offwhite-1);
+}
+.bg-offwhite-2 {
+  background-color: var(--offwhite-2);
+}
+.bg-offwhite-3 {
+  background-color: var(--offwhite-3);
+}
+.bg-cream-1 {
+  background-color: var(--bg-cream-1);
+}
+.bg-cream-2 {
+  background-color: var(--bg-cream-2);
+}
+.bg-cream-3 {
+  background-color: var(--bg-cream-3);
+}
+.bg-transparent {
+  background-color: transparent;
+}
+
+.text-orange-2 {
+  color: var(--orange-2);
+}
+.text-orange-3 {
+  color: var(--orange-3);
+}
+.text-brown-1 {
+  color: var(--brown-1);
+}
+.text-brown-2 {
+  color: var(--brown-2);
+}
+.text-brown-3 {
+  color: var(--brown-3);
+}
+.text-white {
+  color: var(--white);
+}
+
+.border-stroke-1 {
+  border-color: var(--stroke-1);
+}
+
+/* Buttons */
+.bg-primary-btn {
+  background-color: var(--orange-2);
+  color: var(--white);
+}
+.bg-secondary-btn {
+  background-color: var(--white);
+  color: var(--brown-1);
 }

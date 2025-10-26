@@ -1,4 +1,3 @@
-import time
 import django.db.models.signals
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
@@ -54,6 +53,9 @@ THIRD_PARTY_APPS = [
     "corsheaders",
     "django_tailwind_cli",
 ]
+
+if settings.APP_ENV == "development":
+    THIRD_PARTY_APPS.append("django_browser_reload")
 
 LOCAL_APPS = [
     "app.home",

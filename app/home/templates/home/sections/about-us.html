@@ -1,35 +1,38 @@
 {% load static %}
-
-<section id="about-us" class="py-20 mt-5 text-white" style="background-color: #BD4B06;">
+<section id="about-us"
+         class="py-20 mt-5 text-white"
+         style="background-color: #BD4B06">
     <div class="container mx-auto px-6">
         <!-- Header -->
         <div class="text-center mb-16">
             <h2 class="text-5xl md:text-6xl font-bold mb-12 font-td_pinoy">What is PythonAsia?</h2>
         </div>
-
         <!-- Main Content -->
         <div class="grid md:grid-cols-2 gap-12 items-start mb-20">
             <div class="text-left">
                 <h3 class="text-2xl font-bold mb-6 uppercase font-bantayog leading-[130%]">
-                    The largest gathering of Python<br/>
-                    developers in the Philippines with a<br/>
+                    The largest gathering of Python
+                    <br />
+                    developers in the Philippines with a
+                    <br />
                     global experience 🇵🇭🌎
                 </h3>
                 <p class="text-base leading-relaxed font-nunito">
-                    PyCon is a volunteer-run, non-profit conference for the Python 
-                    community, held worldwide since starting in the US. In the 
-                    Philippines, PyCon PH has been organized annually since 
-                    2012, featuring local and international speakers for a globally 
+                    PyCon is a volunteer-run, non-profit conference for the Python
+                    community, held worldwide since starting in the US. In the
+                    Philippines, PyCon PH has been organized annually since
+                    2012, featuring local and international speakers for a globally
                     enriching experience.
                 </p>
             </div>
             <div class="flex justify-center items-center">
                 <div class="relative">
-                    <img src="{% static 'img/about-us-photo.png' %}" alt="PyCon PH 2025 Conference">
+                    <img src="{% static 'img/about-us-photo.png' %}"
+                         alt="PyCon PH 2025 Conference">
                 </div>
             </div>
         </div>
-
+        {% comment %}
         <!-- 3 Days Section -->
         <div class="mb-12">
             <h3 class="text-5xl font-bold mb-8 font-td_pinoy">3 Days, Endless Possibilities</h3>
@@ -38,35 +41,28 @@
                 adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
             </p>
         </div>
-
         <!-- Features Grid -->
         <div class="grid md:grid-cols-3 gap-8 mb-16">
             <!-- World-Class Keynotes -->
-            <div class="">
+            <div>
                 <div class="inline-block p-4 mb-4">
-                    <img src="{% static 'img/vectors/conversation-icon.svg' %}"/>
+                    <img src="{% static 'img/vectors/conversation-icon.svg' %}" />
                 </div>
                 <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">World-Class Keynotes</h4>
-                <p class="text-sm font-nunito">
-                    From core contributors, startup founders, and AI pioneers.
-                </p>
+                <p class="text-sm font-nunito">From core contributors, startup founders, and AI pioneers.</p>
             </div>
-
             <!-- Multi-Track & Live Labs -->
-            <div class="">
+            <div>
                 <div class="inline-block p-4 mb-4">
-                    <img src="{% static 'img/vectors/star-icon.svg' %}"/>
+                    <img src="{% static 'img/vectors/star-icon.svg' %}" />
                 </div>
                 <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Multi-Track & Live Labs</h4>
-                <p class="text-sm font-nunito">
-                    Covering AI/ML, data science, DevOps, and open source.
-                </p>
+                <p class="text-sm font-nunito">Covering AI/ML, data science, DevOps, and open source.</p>
             </div>
-
             <!-- Hands-On Sprints -->
-            <div class="">
+            <div>
                 <div class="inline-block p-4 mb-4">
-                    <img src="{% static 'img/vectors/hands-on-icon.svg' %}"/>
+                    <img src="{% static 'img/vectors/hands-on-icon.svg' %}" />
                 </div>
                 <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Hands-On Sprints</h4>
                 <p class="text-sm font-nunito">
@@ -74,15 +70,13 @@
                 </p>
             </div>
         </div>
-
+        {% endcomment %}
         <!-- Call to Action -->
         <div class="text-center bg-[#B04301] p-[30px] pb-10 rounded-2xl">
             <p class="text-lg mb-2 uppercase tracking-wide font-bantayog">
                 Join <strong>200+ builders, students, and founders</strong>, for <strong>48 hours</strong> of
             </p>
-            <h3 class="text-5xl md:text-6xl font-bold uppercase font-td_pinoy">
-                Code, Coffee, and Collaboration.
-            </h3>
+            <h3 class="text-5xl md:text-6xl font-bold uppercase font-td_pinoy">Code, Coffee, and Collaboration.</h3>
         </div>
     </div>
 </section>
