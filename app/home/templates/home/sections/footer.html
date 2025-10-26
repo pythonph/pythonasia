@@ -38,6 +38,21 @@
         This site is built using Django.
     </p>
 
-    <!-- Decorative Footer Image -->
-    <img src="{% static 'img/vectors/footer.png' %}" alt="Footer decoration" class="w-full block -mt-30">
+    <div class="relative w-full h-[800px] lg:h-[950px] lg:mt-[-20px] z-0">
+      <img src="{% static 'img/footer/pytonio.svg' %}" alt="Left Snake" class="absolute left-0 bottom-80 w-[670px] hidden lg:block">
+      <img src="{% static 'img/footer/pytria.svg' %}" alt="Right Snake" class="absolute right-0 bottom-80 w-[670px] hidden lg:block">
+      <img src="{% static 'img/footer/pot.svg' %}" alt="Pot" class="absolute bottom-80 left-1/2 lg:ml-[-70px] -translate-x-1/2 w-[500px] lg:w-[574.49px] z-10">
+      <img src="{% static 'img/footer/base.svg' %}" alt="Bottom Base" class="absolute bottom-0 left-0 right-0 lg:w-full z-0 hidden lg:block">
+
+      <div class="absolute bottom-0 lg:bottom-20 w-full text-center flex flex-col items-center justify-center z-30 py-6 bg-[#F26D1D] lg:bg-[unset]">
+        <h3 class="text-white font-bold mb-2 text-2xl">CO-ORGANIZED BY</h3>
+        <div class="flex flex-col md:flex-row items-center justify-center md:space-x-8 space-y-4 md:space-y-0 mt-2">
+          <img src="{% static 'img/footer/pythonph.svg' %}" alt="PythonPH" class="h-12 md:h-[60px]">
+          <img src="{% static 'img/footer/pythonasia.svg' %}" alt="Python Asia Organization" class="h-12 md:h-[60px]">
+          <img src="{% static 'img/footer/dlsu.svg' %}" alt="DLSU" class="h-12 md:h-[60px]">
+        </div>
+      </div>
+
+    </div>
+
 </footer>
