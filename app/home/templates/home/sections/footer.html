@@ -1,24 +1,24 @@
 {% load static %}
 
-<footer class="flex flex-col items-center bg-[#F4E6D4] py-12">
+<footer class="flex flex-col items-center bg-[#F4E6D4] pt-12">
     <!-- PythonAsia 2026 Branding -->
-    <img src="{% static 'img/vectors/python-asia-branding.png' %}" class="mt-10" alt="Footer">
+    <img src="{% static 'img/vectors/python-asia-branding.png' %}" class="mt-10 p-5" alt="Footer">
 
     <!-- Action Links -->
     {% comment %}
-    <div class="flex gap-8 mt-10 mb-6">
+    <div class="flex gap-8 mt-10 mb-6 px-5">
         <a href="#" class="text-[#FFA218] text-xl font-bold hover:underline font-bantayog">GET TICKETS</a>
         <a href="#" class="text-[#F26D1D] text-xl font-bold hover:underline font-bantayog">BECOME A SPONSOR</a>
     </div>
     {% endcomment %}
 
     <!-- Contact Message -->
-    <p class="text-[#7C5E3B] text-sm mb-4 font-nunito">
+    <p class="text-[#7C5E3B] text-sm mb-4 font-nunito text-center px-5">
         Message us at <a href="mailto:pycon@python.ph" class="underline">pycon@python.ph</a> for questions and inquiries
     </p>
 
     <!-- Social Media Icons -->
-    <div class="flex gap-4 mb-4">
+    <div class="flex gap-4 mb-4 px-5" style="z-index: 2;">
         <a href="#" class="hover:opacity-70 transition-opacity" aria-label="Facebook">
             <img src="https://cdn.simpleicons.org/facebook/7C5E3B" alt="Facebook" class="w-6 h-6">
         </a>
@@ -34,7 +34,7 @@
     </div>
 
     <!-- Built With Text -->
-    <p class="text-[#7C5E3B] text-sm mb-8 font-nunito">
+    <p class="text-[#7C5E3B] text-sm mb-8 font-nunito px-5" style="z-index: 2;">
         This site is built using Django.
     </p>
 

@@ -4,7 +4,7 @@
     <div class="min-h-screen"
          style="background-image: url('{% static 'img/background.png' %}')">
         <!-- Navbar -->
-        {% comment %}{% include "home/components/navbar.html" %}{% endcomment %}
+         {% include "home/components/navbar.html" %}
         <main>
             <section id="hero" class="text-white text-center flex items-center pt-[170px]">
                 <div class="container mx-auto px-6 bg-cover w-[960px] hero-content">
@@ -29,7 +29,7 @@
             <img src="{% static 'img/vectors/footer.png' %}" class="w-full block xl:mt-[-10em] xl:mb-[-7em]">
         </main>
         <!-- Section Break -->
-        <div class="w-full py-0 my-0 z-10 -mb-25 hidden xl:block">
+        <div class="w-full py-0 my-0 z-10 -mb-25 hidden xl:block cstm_break">
             <img src="{% static 'img/vectors/section-break-1.svg' %}"
                  alt="Section Break"
                  class="w-full block">
@@ -37,7 +37,7 @@
         <!-- About Us Section -->
         {% include "home/sections/about-us.html" %}
         <!-- Section Break -->
-        <div class="w-full py-0 my-0  z-10 -mt-25">
+        <div class="w-full py-0 my-0  z-10 -mt-25 cstm_break about-us_break">
             <img src="{% static 'img/vectors/section-break-2.svg' %}"
                  alt="Section Break"
                  class="w-full block">
@@ -47,7 +47,7 @@
         <!-- Why Python Section -->
         {% include "home/sections/why-python.html" %}
         <!-- What is PyCon Section -->
-        {% include "home/sections/what-is-python-asia.html" %}
+        {% comment%}{% include "home/sections/what-is-python-asia.html" %}{% endcomment%}
         <!-- Announcement Section -->
         {% include "home/sections/announcement-section.html" %}
         <!-- When? Where? Section -->

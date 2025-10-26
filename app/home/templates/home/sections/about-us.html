@@ -1,6 +1,6 @@
 {% load static %}
 <section id="about-us"
-         class="py-20 mt-5 text-white"
+         class="py-20 text-white"
          style="background-color: #BD4B06">
     <div class="container mx-auto px-6">
         <!-- Header -->
@@ -8,7 +8,7 @@
             <h2 class="text-5xl md:text-6xl font-bold mb-12 font-td_pinoy">What is PythonAsia?</h2>
         </div>
         <!-- Main Content -->
-        <div class="text-center px-8 md:px-16 lg:px-24">
+        <div class="text-center px-8 md:px-16 lg:px-24 w-full max-w-[975px] mx-auto">
             <h3 class="text-2xl font-bold mb-6 uppercase font-bantayog">
                 The Flagship Gathering for Python Enthusiasts Across Asia - Uniting Diverse Communities across the region
             </h3>
@@ -34,97 +34,97 @@
             </div>
         </div>
         <!-- 3 Days Section -->
-        <div class="mb-12">
+        <div class="mb-12 w-full max-w-[1160px] mx-auto">
             <h3 class="text-5xl font-bold mb-8 font-td_pinoy">3 Days, Endless Possibilities</h3>
-            <p class="text-lg leading-relaxed">
+            <p class="text-lg leading-relaxed font-nunito">
                 Dive into three days of learning, building, and connecting with the Python community. From inspiring talks to hands-on sprints, PythonAsia is where ideas spark, skills grow, and collaborations begin. Whether you're a first-time attendee or a seasoned contributor, there's something here for everyone.
             </p>
         </div>
         <!-- Features Grid -->
-        <div class="grid md:grid-cols-2 gap-8 mb-16">
+        <div class="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-10 mb-16 w-full max-w-[1160px] mx-auto">
             <!-- Inspiring Keynotes -->
             <div>
-                <div class="inline-block p-4 mb-4">
-                    <img src="{% static 'img/vectors/conversation-icon.svg' %}"
+                <div class="inline-block mb-2">
+                    <img src="{% static 'img/vectors/star-icon.svg' %}"
                          alt="Inspiring Keynotes" />
                 </div>
                 <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Inspiring Keynotes</h4>
-                <p class="text-sm font-nunito">
+                <p class="text-sm font-nunito w-full max-w-[305px]">
                     Hear inspiring talks from core contributors, community leaders, and innovators shaping Python across Asia and beyond
                 </p>
             </div>
             <!-- Talks & Lightning Talks -->
             <div>
-                <div class="inline-block p-4 mb-4">
+                <div class="inline-block mb-2">
                     <img src="{% static 'img/vectors/conversation-icon.svg' %}"
                          alt="Talks & Lightning Talks" />
                 </div>
                 <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Talks & Lightning Talks</h4>
-                <p class="text-sm font-nunito">
+                <p class="text-sm font-nunito w-full max-w-[305px]">
                     From deep-dive sessions to quick, punchy insights, learn from diverse voices across the Python community.
-                </p>
-            </div>
-            <!-- Community Gatherings -->
-            <div>
-                <div class="inline-block p-4 mb-4">
-                    <img src="{% static 'img/vectors/hands-on-icon.svg' %}"
-                         alt="Community Gatherings" />
-                </div>
-                <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Community Gatherings</h4>
-                <p class="text-sm font-nunito">
-                    Join special sessions like the PyLadies Lunch, Open Spaces, and Group Lunch—designed to spark conversations and build connections.
                 </p>
             </div>
             <!-- Multi-Track & Live Workshops -->
             <div>
-                <div class="inline-block p-4 mb-4">
-                    <img src="{% static 'img/vectors/star-icon.svg' %}"
+                <div class="inline-block mb-2">
+                    <img src="{% static 'img/vectors/icon-multitrack-and-live.svg' %}"
                          alt="Multi-Track & Live Workshops" />
                 </div>
                 <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Multi-Track & Live Workshops</h4>
-                <p class="text-sm font-nunito">
+                <p class="text-sm font-nunito w-full max-w-[305px]">
                     Dive into AI/ML, Data Science, DevOps, Open Source, and region-specific use cases powering real-world impact.
+                </p>
+            </div>
+            <!-- Community Gatherings -->
+            <div>
+                <div class="inline-block mb-2">
+                    <img src="{% static 'img/vectors/icon-community-gatherings.svg' %}"
+                         alt="Community Gatherings" />
+                </div>
+                <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Community Gatherings</h4>
+                <p class="text-sm font-nunito w-full max-w-[305px]">
+                    Join special sessions like the PyLadies Lunch, Open Spaces, and Group Lunch—designed to spark conversations and build connections.
                 </p>
             </div>
             <!-- Career Mixer -->
             <div>
-                <div class="inline-block p-4 mb-4">
-                    <img src="{% static 'img/vectors/star-icon.svg' %}" alt="Career Mixer" />
+                <div class="inline-block mb-2">
+                    <img src="{% static 'img/vectors/icon-career-mixer.svg' %}" alt="Career Mixer" />
                 </div>
                 <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Career Mixer</h4>
-                <p class="text-sm font-nunito">
+                <p class="text-sm font-nunito w-full max-w-[305px]">
                     Meet potential employers, collaborators, and mentors in a relaxed, networking-focused environment.
                 </p>
             </div>
             <!-- Sponsor Booths & Stamp Quest -->
             <div>
-                <div class="inline-block p-4 mb-4">
-                    <img src="{% static 'img/vectors/star-icon.svg' %}"
+                <div class="inline-block mb-2">
+                    <img src="{% static 'img/vectors/icon-sponsor-booths.svg' %}"
                          alt="Sponsor Booths & Stamp Quest" />
                 </div>
                 <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Sponsor Booths & Stamp Quest</h4>
-                <p class="text-sm font-nunito">
+                <p class="text-sm font-nunito w-full max-w-[305px]">
                     Explore sponsor showcases, discover new opportunities, and complete our signature Stamp Collection Quest for fun tokens, prizes, and new connections.
                 </p>
             </div>
             <!-- Open Source Sprints -->
             <div>
-                <div class="inline-block p-4 mb-4">
-                    <img src="{% static 'img/vectors/star-icon.svg' %}"
+                <div class="inline-block mb-2">
+                    <img src="{% static 'img/vectors/hands-on-icon.svg' %}"
                          alt="Open Source Sprints" />
                 </div>
                 <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Open Source Sprints</h4>
-                <p class="text-sm font-nunito">
+                <p class="text-sm font-nunito w-full max-w-[305px]">
                     Team up with maintainers and peers (bring your laptop!) to contribute to open source, then connect at our career fair.
                 </p>
             </div>
             <!-- Education Summit -->
             <div>
-                <div class="inline-block p-4 mb-4">
-                    <img src="{% static 'img/vectors/star-icon.svg' %}" alt="Education Summit" />
+                <div class="inline-block mb-2">
+                    <img src="{% static 'img/vectors/icon-education-summit.svg' %}" alt="Education Summit" />
                 </div>
                 <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Education Summit</h4>
-                <p class="text-sm font-nunito">
+                <p class="text-sm font-nunito w-full max-w-[305px]">
                     Co-organized with De La Salle University (DLSU), this special track brings together educators, students, and practitioners to explore how Python is shaping learning and research in Asia
                 </p>
             </div>
@@ -134,7 +134,7 @@
             <p class="text-lg mb-2 uppercase tracking-wide font-bantayog">
                 Join hundreds of developers, students, educators, researchers, and community leaders from across Asia for 3 days of
             </p>
-            <h3 class="text-5xl md:text-6xl font-bold uppercase font-td_pinoy">Learning, Inspiration, and Connection</h3>
+            <h3 class="md:text-6xl sm:text-4xl font-bold uppercase font-td_pinoy">Learning, Inspiration, and Connection</h3>
         </div>
     </div>
 </section>

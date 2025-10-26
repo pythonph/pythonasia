@@ -1,5 +1,6 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 
 @plugin "daisyui";
 
@@ -85,14 +86,14 @@ body {
 }
 
 .font-td_pinoy {
-  font-family: "TD Pinoy ", sans-serif;
+  font-family: "TD Pinoy", sans-serif;
 }
 
 .font-nunito {
-  font-family: "Nunito", regular, sans-serif;
-  weight: 400;
-  size: 18px;
-  line-height: 1.5;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .bg-orange-1 {
@@ -157,4 +158,23 @@ body {
 .bg-secondary-btn {
   background-color: var(--white);
   color: var(--brown-1);
+}
+
+
+@media screen and (max-width: 1570px){
+  .cstm_break.about-us_break{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1411px){
+  .cstm_break{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1411px) and (min-width: 1280px) {
+  #about-us {
+    padding: 250px 0 80px;
+  }
 }
