@@ -52,6 +52,7 @@ if settings.APP_ENV == "development":
 THIRD_PARTY_APPS = [
     "corsheaders",
     "django_tailwind_cli",
+    "bakery",
 ]
 
 if settings.APP_ENV == "development":
@@ -196,3 +197,9 @@ TAILWIND_CLI_USE_DAISY_UI = True
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# Build directory for bakery
+BUILD_DIR = BASE_DIR / "build"
+BAKERY_VIEWS = (
+    "app.home.views.HomeView",
+)

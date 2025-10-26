@@ -1,5 +1,6 @@
-from django.shortcuts import render
+from bakery.views import BuildableTemplateView
 
 
-def home(request):
-    return render(request, "home/index.html")
+class HomeView(BuildableTemplateView):
+    template_name = "home/index.html"
+    build_path = "index.html"

@@ -4,7 +4,7 @@
     <div class="min-h-screen"
          style="background-image: url('{% static 'img/background.png' %}')">
         <!-- Navbar -->
-        {% include "home/components/navbar.html" %}
+        {% comment %}{% include "home/components/navbar.html" %}{% endcomment %}
         <main>
             <section id="hero" class="text-white text-center flex items-center pt-[170px]">
                 <div class="container mx-auto px-6 bg-cover w-[960px] hero-content">
@@ -26,13 +26,10 @@
                     </div>
                 </div>
             </section>
-            <img src="{% static 'img/vectors/footer.png' %}"
-                 class="w-full block"
-                 style="margin-top: -10em;
-                        margin-bottom: -7em">
+            <img src="{% static 'img/vectors/footer.png' %}" class="w-full block xl:mt-[-10em] xl:mb-[-7em]">
         </main>
         <!-- Section Break -->
-        <div class="w-full py-0 my-0 z-10 -mb-25">
+        <div class="w-full py-0 my-0 z-10 -mb-25 hidden xl:block">
             <img src="{% static 'img/vectors/section-break-1.svg' %}"
                  alt="Section Break"
                  class="w-full block">
@@ -56,7 +53,9 @@
         <!-- When? Where? Section -->
         {% include "home/sections/when-where-section.html" %}
         <!-- Sponsors Section -->
-        {% include "home/sections/sponsor-section.html" %}
+        {% comment %}
+          {% include "home/sections/sponsor-section.html" %}
+        {% endcomment %}
         <!-- Code of Conduct Section -->
         {% include "home/sections/code-of-conduct.html" %}
         <!-- Footer Section -->

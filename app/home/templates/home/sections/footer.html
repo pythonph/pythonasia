@@ -3,42 +3,56 @@
 <footer class="flex flex-col items-center bg-[#F4E6D4] py-12">
     <!-- PythonAsia 2026 Branding -->
     <img src="{% static 'img/vectors/python-asia-branding.png' %}" class="mt-10" alt="Footer">
-    
+
     <!-- Action Links -->
+    {% comment %}
     <div class="flex gap-8 mt-10 mb-6">
         <a href="#" class="text-[#FFA218] text-xl font-bold hover:underline font-bantayog">GET TICKETS</a>
         <a href="#" class="text-[#F26D1D] text-xl font-bold hover:underline font-bantayog">BECOME A SPONSOR</a>
     </div>
-    
+    {% endcomment %}
+
     <!-- Contact Message -->
     <p class="text-[#7C5E3B] text-sm mb-4 font-nunito">
         Message us at <a href="mailto:pycon@python.ph" class="underline">pycon@python.ph</a> for questions and inquiries
     </p>
-    
+
     <!-- Social Media Icons -->
     <div class="flex gap-4 mb-4">
-        <a href="#" class="hover:opacity-70 transition-opacity" aria-label="Slack">
-            <img src="https://cdn.simpleicons.org/slack/7C5E3B" alt="Slack" class="w-6 h-6">
-        </a>
         <a href="#" class="hover:opacity-70 transition-opacity" aria-label="Facebook">
             <img src="https://cdn.simpleicons.org/facebook/7C5E3B" alt="Facebook" class="w-6 h-6">
         </a>
         <a href="#" class="hover:opacity-70 transition-opacity" aria-label="GitHub">
             <img src="https://cdn.simpleicons.org/github/7C5E3B" alt="GitHub" class="w-6 h-6">
         </a>
-        <a href="#" class="hover:opacity-70 transition-opacity" aria-label="Twitter">
-            <img src="https://cdn.simpleicons.org/twitter/7C5E3B" alt="Twitter" class="w-6 h-6">
+        <a href="#" class="hover:opacity-70 transition-opacity" aria-label="X">
+            <img src="https://cdn.simpleicons.org/x/7C5E3B" alt="X" class="w-6 h-6">
         </a>
         <a href="#" class="hover:opacity-70 transition-opacity" aria-label="Instagram">
             <img src="https://cdn.simpleicons.org/instagram/7C5E3B" alt="Instagram" class="w-6 h-6">
         </a>
     </div>
-    
+
     <!-- Built With Text -->
     <p class="text-[#7C5E3B] text-sm mb-8 font-nunito">
         This site is built using Django.
     </p>
-    
-    <!-- Decorative Footer Image -->
-    <img src="{% static 'img/vectors/footer.png' %}" alt="Footer decoration" class="w-full block -mt-30">
+
+    <div class="relative w-full h-[800px] lg:h-[950px] lg:mt-[-20px] z-0">
+      <img src="{% static 'img/footer/pytonio.svg' %}" alt="Left Snake" class="absolute left-0 bottom-80 w-[670px] hidden lg:block">
+      <img src="{% static 'img/footer/pytria.svg' %}" alt="Right Snake" class="absolute right-0 bottom-80 w-[670px] hidden lg:block">
+      <img src="{% static 'img/footer/pot.svg' %}" alt="Pot" class="absolute bottom-80 left-1/2 lg:ml-[-70px] -translate-x-1/2 w-[500px] lg:w-[574.49px] z-10">
+      <img src="{% static 'img/footer/base.svg' %}" alt="Bottom Base" class="absolute bottom-0 left-0 right-0 lg:w-full z-0 hidden lg:block">
+
+      <div class="absolute bottom-0 lg:bottom-20 w-full text-center flex flex-col items-center justify-center z-30 py-6 bg-[#F26D1D] lg:bg-[unset]">
+        <h3 class="text-white font-bold mb-2 text-2xl">CO-ORGANIZED BY</h3>
+        <div class="flex flex-col md:flex-row items-center justify-center md:space-x-8 space-y-4 md:space-y-0 mt-2">
+          <img src="{% static 'img/footer/pythonph.svg' %}" alt="PythonPH" class="h-12 md:h-[60px]">
+          <img src="{% static 'img/footer/pythonasia.svg' %}" alt="Python Asia Organization" class="h-12 md:h-[60px]">
+          <img src="{% static 'img/footer/dlsu.svg' %}" alt="DLSU" class="h-12 md:h-[60px]">
+        </div>
+      </div>
+
+    </div>
+
 </footer>
