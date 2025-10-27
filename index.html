@@ -33,7 +33,28 @@
     <div class="min-h-screen"
          style="background-image: url('/static/img/background.png')">
         <!-- Navbar -->
+         
+<nav class="absolute w-full z-10">
+  <div class="relative flex flex-col">
+    
+
+    <div class="bg-transparent w-full max-w-[1260px] mx-auto flex pt-8">
+  
+      <!-- Site Logo -->
+      <div class="navbar-start">
+        <a class="btn btn-ghost text-xl">
+          <img src="/static/img/logo.png"
+               alt="PythonAsia 2026"
+               class="h-8 w-full max-w-[233px]" />
+        </a>
         
+      </div>
+
+      
+    </div>
+  </div>
+</nav>
+
         <main>
             <section id="hero" class="text-white text-center flex items-center pt-[170px]">
                 <div class="container mx-auto px-6 bg-cover w-[960px] hero-content">
@@ -58,7 +79,7 @@
             <img src="/static/img/vectors/footer.png" class="w-full block xl:mt-[-10em] xl:mb-[-7em]">
         </main>
         <!-- Section Break -->
-        <div class="w-full py-0 my-0 z-10 -mb-25 hidden xl:block">
+        <div class="w-full py-0 my-0 z-10 -mb-25 hidden xl:block cstm_break">
             <img src="/static/img/vectors/section-break-1.svg"
                  alt="Section Break"
                  class="w-full block">
@@ -66,7 +87,7 @@
         <!-- About Us Section -->
         
 <section id="about-us"
-         class="py-20 mt-5 text-white"
+         class="py-20 text-white"
          style="background-color: #BD4B06">
     <div class="container mx-auto px-6">
         <!-- Header -->
@@ -74,7 +95,7 @@
             <h2 class="text-5xl md:text-6xl font-bold mb-12 font-td_pinoy">What is PythonAsia?</h2>
         </div>
         <!-- Main Content -->
-        <div class="text-center px-8 md:px-16 lg:px-24">
+        <div class="text-center px-8 md:px-16 lg:px-24 w-full max-w-[975px] mx-auto">
             <h3 class="text-2xl font-bold mb-6 uppercase font-bantayog">
                 The Flagship Gathering for Python Enthusiasts Across Asia - Uniting Diverse Communities across the region
             </h3>
@@ -100,97 +121,97 @@
             </div>
         </div>
         <!-- 3 Days Section -->
-        <div class="mb-12">
+        <div class="mb-12 w-full max-w-[1160px] mx-auto">
             <h3 class="text-5xl font-bold mb-8 font-td_pinoy">3 Days, Endless Possibilities</h3>
-            <p class="text-lg leading-relaxed">
+            <p class="text-lg leading-relaxed font-nunito">
                 Dive into three days of learning, building, and connecting with the Python community. From inspiring talks to hands-on sprints, PythonAsia is where ideas spark, skills grow, and collaborations begin. Whether you're a first-time attendee or a seasoned contributor, there's something here for everyone.
             </p>
         </div>
         <!-- Features Grid -->
-        <div class="grid md:grid-cols-2 gap-8 mb-16">
+        <div class="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-10 mb-16 w-full max-w-[1160px] mx-auto">
             <!-- Inspiring Keynotes -->
             <div>
-                <div class="inline-block p-4 mb-4">
-                    <img src="/static/img/vectors/conversation-icon.svg"
+                <div class="inline-block mb-2">
+                    <img src="/static/img/vectors/star-icon.svg"
                          alt="Inspiring Keynotes" />
                 </div>
                 <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Inspiring Keynotes</h4>
-                <p class="text-sm font-nunito">
+                <p class="text-sm font-nunito w-full max-w-[305px]">
                     Hear inspiring talks from core contributors, community leaders, and innovators shaping Python across Asia and beyond
                 </p>
             </div>
             <!-- Talks & Lightning Talks -->
             <div>
-                <div class="inline-block p-4 mb-4">
+                <div class="inline-block mb-2">
                     <img src="/static/img/vectors/conversation-icon.svg"
                          alt="Talks & Lightning Talks" />
                 </div>
                 <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Talks & Lightning Talks</h4>
-                <p class="text-sm font-nunito">
+                <p class="text-sm font-nunito w-full max-w-[305px]">
                     From deep-dive sessions to quick, punchy insights, learn from diverse voices across the Python community.
-                </p>
-            </div>
-            <!-- Community Gatherings -->
-            <div>
-                <div class="inline-block p-4 mb-4">
-                    <img src="/static/img/vectors/hands-on-icon.svg"
-                         alt="Community Gatherings" />
-                </div>
-                <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Community Gatherings</h4>
-                <p class="text-sm font-nunito">
-                    Join special sessions like the PyLadies Lunch, Open Spaces, and Group Lunch—designed to spark conversations and build connections.
                 </p>
             </div>
             <!-- Multi-Track & Live Workshops -->
             <div>
-                <div class="inline-block p-4 mb-4">
-                    <img src="/static/img/vectors/star-icon.svg"
+                <div class="inline-block mb-2">
+                    <img src="/static/img/vectors/icon-multitrack-and-live.svg"
                          alt="Multi-Track & Live Workshops" />
                 </div>
                 <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Multi-Track & Live Workshops</h4>
-                <p class="text-sm font-nunito">
+                <p class="text-sm font-nunito w-full max-w-[305px]">
                     Dive into AI/ML, Data Science, DevOps, Open Source, and region-specific use cases powering real-world impact.
+                </p>
+            </div>
+            <!-- Community Gatherings -->
+            <div>
+                <div class="inline-block mb-2">
+                    <img src="/static/img/vectors/icon-community-gatherings.svg"
+                         alt="Community Gatherings" />
+                </div>
+                <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Community Gatherings</h4>
+                <p class="text-sm font-nunito w-full max-w-[305px]">
+                    Join special sessions like the PyLadies Lunch, Open Spaces, and Group Lunch—designed to spark conversations and build connections.
                 </p>
             </div>
             <!-- Career Mixer -->
             <div>
-                <div class="inline-block p-4 mb-4">
-                    <img src="/static/img/vectors/star-icon.svg" alt="Career Mixer" />
+                <div class="inline-block mb-2">
+                    <img src="/static/img/vectors/icon-career-mixer.svg" alt="Career Mixer" />
                 </div>
                 <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Career Mixer</h4>
-                <p class="text-sm font-nunito">
+                <p class="text-sm font-nunito w-full max-w-[305px]">
                     Meet potential employers, collaborators, and mentors in a relaxed, networking-focused environment.
                 </p>
             </div>
             <!-- Sponsor Booths & Stamp Quest -->
             <div>
-                <div class="inline-block p-4 mb-4">
-                    <img src="/static/img/vectors/star-icon.svg"
+                <div class="inline-block mb-2">
+                    <img src="/static/img/vectors/icon-sponsor-booths.svg"
                          alt="Sponsor Booths & Stamp Quest" />
                 </div>
                 <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Sponsor Booths & Stamp Quest</h4>
-                <p class="text-sm font-nunito">
+                <p class="text-sm font-nunito w-full max-w-[305px]">
                     Explore sponsor showcases, discover new opportunities, and complete our signature Stamp Collection Quest for fun tokens, prizes, and new connections.
                 </p>
             </div>
             <!-- Open Source Sprints -->
             <div>
-                <div class="inline-block p-4 mb-4">
-                    <img src="/static/img/vectors/star-icon.svg"
+                <div class="inline-block mb-2">
+                    <img src="/static/img/vectors/hands-on-icon.svg"
                          alt="Open Source Sprints" />
                 </div>
                 <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Open Source Sprints</h4>
-                <p class="text-sm font-nunito">
+                <p class="text-sm font-nunito w-full max-w-[305px]">
                     Team up with maintainers and peers (bring your laptop!) to contribute to open source, then connect at our career fair.
                 </p>
             </div>
             <!-- Education Summit -->
             <div>
-                <div class="inline-block p-4 mb-4">
-                    <img src="/static/img/vectors/star-icon.svg" alt="Education Summit" />
+                <div class="inline-block mb-2">
+                    <img src="/static/img/vectors/icon-education-summit.svg" alt="Education Summit" />
                 </div>
                 <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Education Summit</h4>
-                <p class="text-sm font-nunito">
+                <p class="text-sm font-nunito w-full max-w-[305px]">
                     Co-organized with De La Salle University (DLSU), this special track brings together educators, students, and practitioners to explore how Python is shaping learning and research in Asia
                 </p>
             </div>
@@ -200,20 +221,20 @@
             <p class="text-lg mb-2 uppercase tracking-wide font-bantayog">
                 Join hundreds of developers, students, educators, researchers, and community leaders from across Asia for 3 days of
             </p>
-            <h3 class="text-5xl md:text-6xl font-bold uppercase font-td_pinoy">Learning, Inspiration, and Connection</h3>
+            <h3 class="md:text-6xl sm:text-4xl font-bold uppercase font-td_pinoy">Learning, Inspiration, and Connection</h3>
         </div>
     </div>
 </section>
 
         <!-- Section Break -->
-        <div class="w-full py-0 my-0  z-10 -mt-25">
+        <div class="w-full py-0 my-0  z-10 -mt-25 cstm_break about-us_break">
             <img src="/static/img/vectors/section-break-2.svg"
                  alt="Section Break"
                  class="w-full block">
         </div>
         <!-- Conference at a Glance Section -->
         
-<section id="conference-at-a-glance" class="py-20">
+<section id="conference-at-a-glance" class="py-20 bg-[url('/static/img/bg-conference-at-glance.png')] bg-contain bg-center">
     <div class="container mx-auto px-6">
         <!-- Header -->
         <div class="text-center mb-16">
@@ -221,77 +242,59 @@
                 style="color: #D87A3F">Conference at a Glance</h2>
         </div>
         <!-- Schedule Grid -->
-        <div class="grid md:grid-cols-2 gap-8 mb-20 max-w-5xl mx-auto">
+        <div class="flex flex-col sm:flex-row md:items-stretch md:justify-center items-center gap-8 mb-20 max-w-5xl mx-auto">
             <!-- March 21-22 -->
-            <div class="p-8 rounded-lg" style="background-color: #FFF;">
-                <div class="border-b-4 pb-4 mb-6" style="border-color: #D87A3F;">
-                    <h3 class="text-2xl font-bold mb-2 font-bantayog" style="color: #7C5E3B;">MARCH 21-22,</h3>
-                    <h4 class="text-xl font-bold font-bantayog" style="color: #7C5E3B;">SATURDAY-SUNDAY</h4>
+            <div class="p-8 rounded-2xl w-full max-w-[300px] bg-offwhite-2 border-t-[8px] border-t-[#F26D1D]">
+                <div class="mb-6">
+                    <h3 class="text-2xl font-bold mb-0 font-bantayog text-brown-1">MARCH 21-22,</h3>
+                    <h4 class="text-2xl font-bold mb-0 font-bantayog text-brown-1">SATURDAY-SUNDAY</h4>
                 </div>
                 <div class="space-y-3">
-                    <p class="font-semibold text-lg mb-4" style="color: #7C5E3B;">Main Conference</p>
+                    <p class="text-lg font-bold mb-2 font-bantayog text-brown-2">Main Conference</p>
                     <div class="flex items-center space-x-3 font-nunito">
-                        <span class="material-symbols-outlined text-white rounded-full p-1"
-                              style="background-color: #BD4B06;
-                                     font-size: 20px">check_circle</span>
-                        <span style="color: #7C5E3B;">Talks</span>
+                        <img src="/static/img/vectors/icon-checkbox-brown-2.svg" alt="Checkbox Icon">
+                        <span class="font-nunito text-lg text-brown-2">Talks</span>
                     </div>
                     <div class="flex items-center space-x-3 font-nunito">
-                        <span class="material-symbols-outlined text-white rounded-full p-1"
-                              style="background-color: #BD4B06;
-                                     font-size: 20px">check_circle</span>
-                        <span style="color: #7C5E3B;">Workshops</span>
+                        <img src="/static/img/vectors/icon-checkbox-brown-2.svg" alt="Checkbox Icon">
+                        <span class="font-nunito text-lg text-brown-2">Workshops</span>
                     </div>
                     <div class="flex items-center space-x-3 font-nunito">
-                        <span class="material-symbols-outlined text-white rounded-full p-1"
-                              style="background-color: #BD4B06;
-                                     font-size: 20px">check_circle</span>
-                        <span style="color: #7C5E3B;">Lightning Talks</span>
+                        <img src="/static/img/vectors/icon-checkbox-brown-2.svg" alt="Checkbox Icon">
+                        <span class="font-nunito text-lg text-brown-2">Lightning Talks</span>
                     </div>
                     <div class="flex items-center space-x-3">
-                        <span class="material-symbols-outlined text-white rounded-full p-1"
-                              style="background-color: #BD4B06;
-                                     font-size: 20px">check_circle</span>
-                        <span style="color: #7C5E3B;">PyLadies Lunch</span>
+                        <img src="/static/img/vectors/icon-checkbox-brown-2.svg" alt="Checkbox Icon">
+                        <span class="font-nunito text-lg text-brown-2">PyLadies Lunch</span>
                     </div>
                     <div class="flex items-center space-x-3 font-nunito">
-                        <span class="material-symbols-outlined text-white rounded-full p-1"
-                              style="background-color: #BD4B06;
-                                     font-size: 20px">check_circle</span>
-                        <span style="color: #7C5E3B;">Open Spaces</span>
+                        <img src="/static/img/vectors/icon-checkbox-brown-2.svg" alt="Checkbox Icon">
+                        <span class="font-nunito text-lg text-brown-2">Open Spaces</span>
                     </div>
                     <div class="flex items-center space-x-3 font-nunito">
-                        <span class="material-symbols-outlined text-white rounded-full p-1"
-                              style="background-color: #BD4B06;
-                                     font-size: 20px">check_circle</span>
-                        <span style="color: #7C5E3B;">Group Lunch</span>
+                        <img src="/static/img/vectors/icon-checkbox-brown-2.svg" alt="Checkbox Icon">
+                        <span class="font-nunito text-lg text-brown-2">Group Lunch</span>
                     </div>
                     <div class="flex items-center space-x-3 font-nunito">
-                        <span class="material-symbols-outlined text-white rounded-full p-1"
-                              style="background-color: #BD4B06;
-                                     font-size: 20px">check_circle</span>
-                        <span style="color: #7C5E3B;">Career Mixer</span>
+                        <img src="/static/img/vectors/icon-checkbox-brown-2.svg" alt="Checkbox Icon">
+                        <span class="font-nunito text-lg text-brown-2">Career Mixer</span>
                     </div>
                 </div>
             </div>
             <!-- March 23 -->
-            <div class="p-8 rounded-lg" style="background-color: #FFF;">
-                <div class="border-b-4 pb-4 mb-6" style="border-color: #D87A3F;">
-                    <h3 class="text-2xl font-bold mb-2 font-bantayog" style="color: #7C5E3B;">MARCH 23,</h3>
-                    <h4 class="text-xl font-bold font-bantayog" style="color: #7C5E3B;">MONDAY</h4>
+            <div class="p-8 rounded-2xl w-full max-w-[300px] bg-offwhite-2 border-t-[8px] border-t-[#FFA218]">
+                <div class="mb-6">
+                    <h3 class="text-2xl font-bold mb-0 font-bantayog text-brown-1">MARCH 23,</h3>
+                    <h4 class="text-2xl font-bold mb-0 font-bantayog text-brown-1">MONDAY</h4>
                 </div>
                 <div class="space-y-3">
                     <div class="flex items-center space-x-3 font-bantayog">
-                        <span class="material-symbols-outlined text-white rounded-full p-1"
-                              style="background-color: #BD4B06;
-                                     font-size: 20px">check_circle</span>
-                        <span style="color: #7C5E3B;">Education Summit</span>
+                        <img src="/static/img/vectors/icon-checkbox-brown-2.svg" alt="Checkbox Icon">
+                        <span class="font-nunito text-lg text-brown-2">Education Summit</span>
                     </div>
                     <div class="flex items-center space-x-3 font-bantayog">
-                        <span class="material-symbols-outlined text-white rounded-full p-1"
-                              style="background-color: #BD4B06;
-                                     font-size: 20px">check_circle</span>
-                        <span style="color: #7C5E3B;">Open Source Sprints</span>
+                        <img src="/static/img/vectors/icon-checkbox-brown-2.svg" alt="Checkbox Icon">
+                        <span class="font-nunito text-lg text-brown-2">Open Source Sprints</span>
                     </div>
                 </div>
             </div>
@@ -304,31 +307,31 @@
         <!-- Why Python Section -->
         
 
-<section id="why-python" class="py-20 px-6" style="background-color: #F5EFE7;">
-    <div class="container mx-auto max-w-7xl">
+<section id="why-python" class="py-20 px-6 bg-offwhite-3">
+    <div class="container mx-auto w-full max-w-[1080px]">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <!-- Left Column - Text Content -->
-            <div class="space-y-6">
+            <div class="space-y-6 w-full max-w-[452px]">
                 <h2 class="text-5xl lg:text-6xl font-bold text-[#D87532] mb-6 font-td_pinoy">Why Python?</h2>
                 
-                <p class="text-[#7C5E3B] text-lg leading-relaxed font-nunito">
+                <p class="text-brown-2 text-lg leading-relaxed font-nunito">
                     We believe Python changes lives.
                 </p>
                 
-                <p class="text-[#7C5E3B] text-base leading-relaxed font-nunito">
+                <p class="text-brown-2 text-base leading-relaxed font-nunito">
                     It gives everyday people the tools to create, solve problems, 
                     and share ideas with the world—while also powering 
                     industries from AI and data science to cloud computing and 
                     automation.
                 </p>
                 
-                <p class="text-[#7C5E3B] text-base leading-relaxed font-nunito">
+                <p class="text-brown-2 text-base leading-relaxed font-nunito">
                     From students building their first websites, to small teams 
                     streamlining workflows, to researchers and companies tackling 
                     big challenges—Python is there.
                 </p>
                 
-                <p class="text-[#7C5E3B] text-base leading-relaxed font-nunito">
+                <p class="text-brown-2 text-base leading-relaxed font-nunito">
                     Simple enough to start with, powerful enough to shape the 
                     future. And at PythonPH, we see it every day in our 
                     community: people learning, teaching, and creating together. 
@@ -343,7 +346,7 @@
                     <div class="w-20 h-20 rounded-lg bg-[#FFF8F0] flex items-center justify-center mb-3">
                         <span class="material-symbols-outlined text-[#D87532]" style="font-size: 48px;">analytics</span>
                     </div>
-                    <p class="text-[#7C5E3B] text-sm font-medium">Data Analysis</p>
+                    <p class="text-brown-2 text-sm font-medium">Data Analysis</p>
                 </div>
                 
                 <!-- AI/Machine Learning -->
@@ -351,7 +354,7 @@
                     <div class="w-20 h-20 rounded-lg bg-[#FFF8F0] flex items-center justify-center mb-3">
                         <span class="material-symbols-outlined text-[#D87532]" style="font-size: 48px;">psychology</span>
                     </div>
-                    <p class="text-[#7C5E3B] text-sm font-medium">AI/Machine Learning</p>
+                    <p class="text-brown-2 text-sm font-medium">AI/Machine Learning</p>
                 </div>
                 
                 <!-- Automation -->
@@ -359,7 +362,7 @@
                     <div class="w-20 h-20 rounded-lg bg-[#FFF8F0] flex items-center justify-center mb-3">
                         <span class="material-symbols-outlined text-[#D87532]" style="font-size: 48px;">settings_suggest</span>
                     </div>
-                    <p class="text-[#7C5E3B] text-sm font-medium">Automation</p>
+                    <p class="text-brown-2 text-sm font-medium">Automation</p>
                 </div>
                 
                 <!-- Cloud Computing -->
@@ -367,7 +370,7 @@
                     <div class="w-20 h-20 rounded-lg bg-[#FFF8F0] flex items-center justify-center mb-3">
                         <span class="material-symbols-outlined text-[#D87532]" style="font-size: 48px;">cloud</span>
                     </div>
-                    <p class="text-[#7C5E3B] text-sm font-medium">Cloud Computing</p>
+                    <p class="text-brown-2 text-sm font-medium">Cloud Computing</p>
                 </div>
                 
                 <!-- Web Apps -->
@@ -375,7 +378,7 @@
                     <div class="w-20 h-20 rounded-lg bg-[#FFF8F0] flex items-center justify-center mb-3">
                         <span class="material-symbols-outlined text-[#D87532]" style="font-size: 48px;">web</span>
                     </div>
-                    <p class="text-[#7C5E3B] text-sm font-medium">Web Apps</p>
+                    <p class="text-brown-2 text-sm font-medium">Web Apps</p>
                 </div>
                 
                 <!-- Mobile Apps -->
@@ -383,7 +386,7 @@
                     <div class="w-20 h-20 rounded-lg bg-[#FFF8F0] flex items-center justify-center mb-3">
                         <span class="material-symbols-outlined text-[#D87532]" style="font-size: 48px;">smartphone</span>
                     </div>
-                    <p class="text-[#7C5E3B] text-sm font-medium">Mobile Apps</p>
+                    <p class="text-brown-2 text-sm font-medium">Mobile Apps</p>
                 </div>
                 
                 <!-- Desktop Apps -->
@@ -391,7 +394,7 @@
                     <div class="w-20 h-20 rounded-lg bg-[#FFF8F0] flex items-center justify-center mb-3">
                         <span class="material-symbols-outlined text-[#D87532]" style="font-size: 48px;">computer</span>
                     </div>
-                    <p class="text-[#7C5E3B] text-sm font-medium">Desktop Apps</p>
+                    <p class="text-brown-2 text-sm font-medium">Desktop Apps</p>
                 </div>
                 
                 <!-- Software Testing -->
@@ -399,7 +402,7 @@
                     <div class="w-20 h-20 rounded-lg bg-[#FFF8F0] flex items-center justify-center mb-3">
                         <span class="material-symbols-outlined text-[#D87532]" style="font-size: 48px;">bug_report</span>
                     </div>
-                    <p class="text-[#7C5E3B] text-sm font-medium">Software Testing</p>
+                    <p class="text-brown-2 text-sm font-medium">Software Testing</p>
                 </div>
                 
                 <!-- Cyber Security -->
@@ -407,7 +410,7 @@
                     <div class="w-20 h-20 rounded-lg bg-[#FFF8F0] flex items-center justify-center mb-3">
                         <span class="material-symbols-outlined text-[#D87532]" style="font-size: 48px;">security</span>
                     </div>
-                    <p class="text-[#7C5E3B] text-sm font-medium">Cyber Security</p>
+                    <p class="text-brown-2 text-sm font-medium">Cyber Security</p>
                 </div>
             </div>
         </div>
@@ -417,26 +420,6 @@
 
         <!-- What is PyCon Section -->
         
-
-<section id="what-is-pycon" class="py-20 px-6" style="background-color: #F5EFE7;">
-    <div class="container mx-auto max-w-7xl">
-        <!-- Header -->
-        <div class="text-center mb-16">
-            <h2 class="text-5xl lg:text-6xl font-bold text-[#D87532] mb-6 font-td_pinoy">What is Python Asia?</h2>
-            <p class="text-2xl font-bold tracking-wider text-[#7C5E3B] mb-4 font-bantayog">
-                MAGIC HAPPENS WHEN PEOPLE COME TOGETHER TO ACHIEVE COMMON GOALS.
-            </p>
-            <p class="text-[#7C5E3B] text-lg leading-relaxed font-nunito">
-                Magic happens when people come together to achieve common goals.
-            </p>
-        </div>
-
-        <!-- Three Cards Grid -->
-        
-    </div>
-</section>
-
-
         <!-- Announcement Section -->
         
 
@@ -532,20 +515,20 @@
         <!-- Footer Section -->
         
 
-<footer class="flex flex-col items-center bg-[#F4E6D4] py-12">
+<footer class="flex flex-col items-center bg-[#F4E6D4] pt-12">
     <!-- PythonAsia 2026 Branding -->
-    <img src="/static/img/vectors/python-asia-branding.png" class="mt-10" alt="Footer">
+    <img src="/static/img/vectors/python-asia-branding.png" class="mt-10 p-5" alt="Footer">
 
     <!-- Action Links -->
     
 
     <!-- Contact Message -->
-    <p class="text-[#7C5E3B] text-sm mb-4 font-nunito">
+    <p class="text-[#7C5E3B] text-sm mb-4 font-nunito text-center px-5">
         Message us at <a href="mailto:pycon@python.ph" class="underline">pycon@python.ph</a> for questions and inquiries
     </p>
 
     <!-- Social Media Icons -->
-    <div class="flex gap-4 mb-4">
+    <div class="flex gap-4 mb-4 px-5" style="z-index: 2;">
         <a href="#" class="hover:opacity-70 transition-opacity" aria-label="Facebook">
             <img src="https://cdn.simpleicons.org/facebook/7C5E3B" alt="Facebook" class="w-6 h-6">
         </a>
@@ -561,7 +544,7 @@
     </div>
 
     <!-- Built With Text -->
-    <p class="text-[#7C5E3B] text-sm mb-8 font-nunito">
+    <p class="text-[#7C5E3B] text-sm mb-8 font-nunito px-5" style="z-index: 2;">
         This site is built using Django.
     </p>
 
