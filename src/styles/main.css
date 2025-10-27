@@ -4,15 +4,6 @@
 
 @plugin "daisyui";
 
-body {
-  background-color: #fff9f2;
-  color: #7c5e3b;
-  font-size: 24px;
-}
-
-.test {
-  padding: 500px;
-}
 
 :root {
   --color-primary: #f26d1d;
@@ -75,6 +66,12 @@ body {
   src: url("/static/fonts/TD_Pinoy.otf") format("opentype");
   font-weight: 500;
   font-display: swap;
+}
+
+body {
+  background-color: var(--offwhite-1);
+  color: var(--brown-2);
+  font-size: 24px;
 }
 
 .font-bantayog {
@@ -160,6 +157,31 @@ body {
   color: var(--brown-1);
 }
 
+/* START: Custom CSS Here */
+
+#hero {
+    background: url("../../static/img/python-asia-bg.png") bottom / 100% no-repeat;
+    height: 1561px;
+}
+
+.python-kalinga-pot{
+  width: 100%;
+  max-width: 730px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-15vh);
+}
+
+.python-kalinga-pot .pot{
+  width: 100%;
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateX(-3.5vw);
+  margin-bottom: 45px;
+}
+
+/* Media Query */
 
 @media screen and (max-width: 1570px){
   .cstm_break.about-us_break{
@@ -176,5 +198,80 @@ body {
 @media screen and (max-width: 1411px) and (min-width: 1280px) {
   #about-us {
     padding: 250px 0 80px;
+  }
+}
+
+@media screen and (max-width: 1100px){
+  .python-kalinga-pot .pot{
+    width: 100%;
+    max-width: 400px;
+    transform: translateX(-3.5vw);
+    margin-bottom: 45px;
+  }
+
+    #hero {
+      height: 150vh;
+  }
+
+  .python-kalinga-pot {
+    transform: translateY(-8vh);
+  }
+}
+
+@media screen and (max-width: 768px){
+  .python-kalinga-pot .pot{
+    width: 100%;
+    max-width: 280px;
+    transform: translateX(-3.5vw);
+    margin-bottom: 20px;
+  }
+
+    #hero {
+      height: 140vh;
+  }
+
+  .python-kalinga-pot {
+    transform: translateY(-5vh);
+  }
+}
+
+@media screen and (max-width: 768px){
+  .python-kalinga-pot .pot{
+    width: 100%;
+    max-width: 280px;
+    transform: translateX(-3.5vw);
+    margin-bottom: 20px;
+  }
+
+    #hero {
+      height: 145vh;
+      padding-inline: 4%;
+  }
+
+  .python-kalinga-pot {
+    transform: translateY(-5vh);
+  }
+
+  
+  .python-kalinga-pot .co-organized{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .python-kalinga-pot .co-organized img{
+    width: 100%;
+    max-height: 50px !important;
+  }
+
+  #hero{
+    background-size: cover;
+    background-position: center;
+  }
+
+  .python-kalinga-pot .justify-self-end.self-center{
+    justify-self: unset;
   }
 }
