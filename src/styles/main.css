@@ -161,7 +161,6 @@ body {
 
 #hero {
     background: url("../../static/img/python-asia-bg.png") bottom / 100% no-repeat;
-    height: 1561px;
 }
 
 .python-kalinga-pot{
@@ -179,6 +178,10 @@ body {
   margin-right: auto;
   transform: translateX(-3.5vw);
   margin-bottom: 45px;
+}
+
+.bg_call-for-links{
+    background: url("../../static/img/call-for-links.png") center center / cover no-repeat;
 }
 
 /* Media Query */
@@ -201,7 +204,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1300px){
   .python-kalinga-pot .pot{
     width: 100%;
     max-width: 400px;
@@ -209,9 +212,12 @@ body {
     margin-bottom: 45px;
   }
 
-    #hero {
-      height: 150vh;
+  
+  #hero{
+    background-size: cover;
+    background-position: center;
   }
+
 
   .python-kalinga-pot {
     transform: translateY(-8vh);
@@ -226,9 +232,6 @@ body {
     margin-bottom: 20px;
   }
 
-    #hero {
-      height: 140vh;
-  }
 
   .python-kalinga-pot {
     transform: translateY(-5vh);
@@ -243,11 +246,6 @@ body {
     margin-bottom: 20px;
   }
 
-    #hero {
-      height: 145vh;
-      padding-inline: 4%;
-  }
-
   .python-kalinga-pot {
     transform: translateY(-5vh);
   }
@@ -258,17 +256,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 18px
   }
   
   .python-kalinga-pot .co-organized img{
     width: 100%;
-    max-height: 50px !important;
-  }
-
-  #hero{
-    background-size: cover;
-    background-position: center;
+    max-height: 60px !important;
   }
 
   .python-kalinga-pot .justify-self-end.self-center{
