@@ -44,14 +44,10 @@
 
 
         
-        <style>
-        .hero-content {
-            background-image: url("/static/img/hero-bg.png");
-        }
-        </style>
     </head>
     <body>
         
+<main>
     <div class="min-h-screen"
          style="background-image: url('/static/img/background.png')">
         <!-- Navbar -->
@@ -77,31 +73,42 @@
   </div>
 </nav>
 
-        <main>
-            <section id="hero" class="text-white text-center flex items-center pt-[170px]">
-                <div class="container mx-auto px-6 bg-cover w-[960px] hero-content">
-                    <div class="flex flex-col items-center space-y-8">
-                        <img src="/static/img/vectors/kalinga-baybayin.svg"
-                             alt="kliN"
-                             class="w-[189px] h-auto">
-                        <img src="/static/img/kalinga.png"
-                             alt="Kalinga"
-                             class="w-[336.34px] h-auto">
-                        <img src="/static/img/vectors/python-asia-branding.png"
-                             alt="PythonAsia 2026"
-                             class="w-[635px] h-auto">
-                        <div class="text-center text-[#7C5E3B] z-30">
-                            Nurturing a community of care, compassion, and growth.
-                            <br />
-                            The same heart of PyCon APAC, now as PythonAsia.
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <img src="/static/img/vectors/footer.png" class="w-full block xl:mt-[-10em] xl:mb-[-7em]">
-        </main>
-        <!-- Section Break -->
-        <div class="w-full py-0 my-0 z-10 -mb-25 hidden xl:block cstm_break">
+        
+        <!-- Hero Section -->
+         
+
+<section id="hero" class="px-[4%] flex flex-col items-center justify-end">
+  <div class="flex flex-col max-w-[730px] mx-auto pb-[20px] pt-[180px] xl:pb-[50px] xl:pt-[150px] 2xl:pb-[100px] 2xl:pt-[250px] gap-5">
+      <div class="flex flex-col justify-center items-center gap-8">
+        <img src="/static/img/vectors/kalinga-baybayin.svg" alt="kliN" class="w-full max-w-[189px]">
+        <img src="/static/img/kalinga.png" alt="Kalinga" class="w-full max-w-[336.34px]">
+        <img src="/static/img/vectors/python-asia-branding.png" alt="PythonAsia 2026">
+      </div>
+      <div class="text-center z-10">
+        <p class="font-nunito leading-[125%] font-normal text-2xl text-brown-2">Nurturing a community of care, compassion, and growth.</p>
+        <p class="font-nunito leading-[125%] font-normal text-2xl text-brown-2">The same heart of PyCon APAC, now as PythonAsia.</p>
+      </div>
+      <div class="text-center z-10">
+        <h2 class="font-bantayog leading-[125%] text-[52px] text-brown-1">MARCH 21-23, 2026</h2>
+        <p class="font-bantayog leading-[125%] text-xl text-brown-2 font-light">DE LA SALLE UNIVERSITY (DLSU), MALATE, MANILA</p>
+      </div>
+      <div class="python-kalinga-pot">
+        <img class="pot" src="/static/img/py_kalinga-pot.svg" alt="Kalinga pot">
+        <div class="">
+          <h2 class="font-bantayog text-[28px] text-white text-center">Co-organized By</h2>
+          <div class="flex flex-row items-center justify-center gap-[45px] co-organized">
+            <img src="/static/img/footer/pythonph.svg" alt="PythonPH" class="w-full max-w-[210px]">
+            <img src="/static/img/footer/pythonasia.svg" alt="Python Asia Organization"
+              class="w-full max-w-[320px]">
+            <img src="/static/img/footer/dlsu.svg" alt="DLSU" class="w-full max-w-[110px]">
+          </div>
+        </div>
+      </div>
+  </div>
+
+</section>
+
+        <div class="w-full py-0 my-0 z-10 -mb-25 hidden xl:block cstm_break mt-[-9vw]">
             <img src="/static/img/vectors/section-break-1.svg"
                  alt="Section Break"
                  class="w-full block">
@@ -144,96 +151,96 @@
         </div>
         <!-- 3 Days Section -->
         <div class="mb-12 w-full max-w-[1160px] mx-auto">
-            <h3 class="text-5xl font-bold mb-8 font-td_pinoy">3 Days, Endless Possibilities</h3>
-            <p class="text-lg leading-relaxed font-nunito">
+            <h3 class="text-5xl font-bold mb-8 font-td_pinoy text-center sm:text-left xl:text-left">3 Days, Endless Possibilities</h3>
+            <p class="text-lg leading-relaxed font-nunito text-center sm:text-left xl:text-left">
                 Dive into three days of learning, building, and connecting with the Python community. From inspiring talks to hands-on sprints, PythonAsia is where ideas spark, skills grow, and collaborations begin. Whether you're a first-time attendee or a seasoned contributor, there's something here for everyone.
             </p>
         </div>
         <!-- Features Grid -->
         <div class="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-10 mb-16 w-full max-w-[1160px] mx-auto">
             <!-- Inspiring Keynotes -->
-            <div>
+            <div class="flex flex-col items-center justify-center sm:items-start sm:justify-start xl:items-start xl:justify-start">
                 <div class="inline-block mb-2">
                     <img src="/static/img/vectors/star-icon.svg"
                          alt="Inspiring Keynotes" />
                 </div>
                 <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Inspiring Keynotes</h4>
-                <p class="text-sm font-nunito w-full max-w-[305px]">
+                <p class="text-sm font-nunito w-full max-w-[305px] text-center sm:text-left xl:text-left text-center sm:text-left xl:text-left">
                     Hear inspiring talks from core contributors, community leaders, and innovators shaping Python across Asia and beyond
                 </p>
             </div>
             <!-- Talks & Lightning Talks -->
-            <div>
+            <div class="flex flex-col items-center justify-center sm:items-start sm:justify-start xl:items-start xl:justify-start">
                 <div class="inline-block mb-2">
                     <img src="/static/img/vectors/conversation-icon.svg"
                          alt="Talks & Lightning Talks" />
                 </div>
                 <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Talks & Lightning Talks</h4>
-                <p class="text-sm font-nunito w-full max-w-[305px]">
+                <p class="text-sm font-nunito w-full max-w-[305px] text-center sm:text-left xl:text-left text-center sm:text-left xl:text-left">
                     From deep-dive sessions to quick, punchy insights, learn from diverse voices across the Python community.
                 </p>
             </div>
             <!-- Multi-Track & Live Workshops -->
-            <div>
+            <div class="flex flex-col items-center justify-center sm:items-start sm:justify-start xl:items-start xl:justify-start">
                 <div class="inline-block mb-2">
                     <img src="/static/img/vectors/icon-multitrack-and-live.svg"
                          alt="Multi-Track & Live Workshops" />
                 </div>
                 <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Multi-Track & Live Workshops</h4>
-                <p class="text-sm font-nunito w-full max-w-[305px]">
+                <p class="text-sm font-nunito w-full max-w-[305px] text-center sm:text-left xl:text-left text-center sm:text-left xl:text-left">
                     Dive into AI/ML, Data Science, DevOps, Open Source, and region-specific use cases powering real-world impact.
                 </p>
             </div>
             <!-- Community Gatherings -->
-            <div>
+            <div class="flex flex-col items-center justify-center sm:items-start sm:justify-start xl:items-start xl:justify-start">
                 <div class="inline-block mb-2">
                     <img src="/static/img/vectors/icon-community-gatherings.svg"
                          alt="Community Gatherings" />
                 </div>
                 <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Community Gatherings</h4>
-                <p class="text-sm font-nunito w-full max-w-[305px]">
-                    Join special sessions like the PyLadies Lunch, Open Spaces, and Group Lunch—designed to spark conversations and build connections.
+                <p class="text-sm font-nunito w-full max-w-[305px] text-center sm:text-left xl:text-left text-center sm:text-left xl:text-left">
+                    Join special sessions like the PyLadies Lunch, and Open Spaces — designed to spark conversations and build connections.
                 </p>
             </div>
             <!-- Career Mixer -->
-            <div>
+            <div class="flex flex-col items-center justify-center sm:items-start sm:justify-start xl:items-start xl:justify-start">
                 <div class="inline-block mb-2">
                     <img src="/static/img/vectors/icon-career-mixer.svg" alt="Career Mixer" />
                 </div>
                 <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Career Mixer</h4>
-                <p class="text-sm font-nunito w-full max-w-[305px]">
+                <p class="text-sm font-nunito w-full max-w-[305px] text-center sm:text-left xl:text-left text-center sm:text-left xl:text-left">
                     Meet potential employers, collaborators, and mentors in a relaxed, networking-focused environment.
                 </p>
             </div>
             <!-- Sponsor Booths & Stamp Quest -->
-            <div>
+            <div class="flex flex-col items-center justify-center sm:items-start sm:justify-start xl:items-start xl:justify-start">
                 <div class="inline-block mb-2">
                     <img src="/static/img/vectors/icon-sponsor-booths.svg"
                          alt="Sponsor Booths & Stamp Quest" />
                 </div>
                 <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Sponsor Booths & Stamp Quest</h4>
-                <p class="text-sm font-nunito w-full max-w-[305px]">
+                <p class="text-sm font-nunito w-full max-w-[305px] text-center sm:text-left xl:text-left">
                     Explore sponsor showcases, discover new opportunities, and complete our signature Stamp Collection Quest for fun tokens, prizes, and new connections.
                 </p>
             </div>
             <!-- Open Source Sprints -->
-            <div>
+            <div class="flex flex-col items-center justify-center sm:items-start sm:justify-start xl:items-start xl:justify-start">
                 <div class="inline-block mb-2">
                     <img src="/static/img/vectors/hands-on-icon.svg"
                          alt="Open Source Sprints" />
                 </div>
                 <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Open Source Sprints</h4>
-                <p class="text-sm font-nunito w-full max-w-[305px]">
+                <p class="text-sm font-nunito w-full max-w-[305px] text-center sm:text-left xl:text-left text-center sm:text-left xl:text-left">
                     Team up with maintainers and peers (bring your laptop!) to contribute to open source, then connect at our career fair.
                 </p>
             </div>
             <!-- Education Summit -->
-            <div>
+            <div class="flex flex-col items-center justify-center sm:items-start sm:justify-start xl:items-start xl:justify-start">
                 <div class="inline-block mb-2">
                     <img src="/static/img/vectors/icon-education-summit.svg" alt="Education Summit" />
                 </div>
                 <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Education Summit</h4>
-                <p class="text-sm font-nunito w-full max-w-[305px]">
+                <p class="text-sm font-nunito w-full max-w-[305px] text-center sm:text-left xl:text-left text-center sm:text-left xl:text-left">
                     Co-organized with De La Salle University (DLSU), this special track brings together educators, students, and practitioners to explore how Python is shaping learning and research in Asia
                 </p>
             </div>
@@ -295,11 +302,11 @@
                     </div>
                     <div class="flex items-center space-x-3 font-nunito">
                         <img src="/static/img/vectors/icon-checkbox-brown-2.svg" alt="Checkbox Icon">
-                        <span class="font-nunito text-lg text-brown-2">Group Lunch</span>
+                        <span class="font-nunito text-lg text-brown-2">Career Mixer</span>
                     </div>
                     <div class="flex items-center space-x-3 font-nunito">
                         <img src="/static/img/vectors/icon-checkbox-brown-2.svg" alt="Checkbox Icon">
-                        <span class="font-nunito text-lg text-brown-2">Career Mixer</span>
+                        <span class="font-nunito text-lg text-brown-2">Poster Session</span>
                     </div>
                 </div>
             </div>
@@ -333,27 +340,27 @@
     <div class="container mx-auto w-full max-w-[1080px]">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <!-- Left Column - Text Content -->
-            <div class="space-y-6 w-full max-w-[452px]">
-                <h2 class="text-5xl lg:text-6xl font-bold text-[#D87532] mb-6 font-td_pinoy">Why Python?</h2>
+            <div class="space-y-6 w-full max-w-[452px] mx-auto md:m-0 xl:m-0">
+                <h2 class="text-5xl lg:text-6xl font-bold text-[#D87532] mb-6 font-td_pinoy text-center md:text-left xl:text-left">Why Python?</h2>
                 
-                <p class="text-brown-2 text-lg leading-relaxed font-nunito">
+                <p class="text-brown-2 text-lg leading-relaxed font-nunito text-center md:text-left xl:text-left">
                     We believe Python changes lives.
                 </p>
                 
-                <p class="text-brown-2 text-base leading-relaxed font-nunito">
+                <p class="text-brown-2 text-base leading-relaxed font-nunito text-center md:text-left xl:text-left">
                     It gives everyday people the tools to create, solve problems, 
                     and share ideas with the world—while also powering 
                     industries from AI and data science to cloud computing and 
                     automation.
                 </p>
                 
-                <p class="text-brown-2 text-base leading-relaxed font-nunito">
+                <p class="text-brown-2 text-base leading-relaxed font-nunito text-center md:text-left xl:text-left">
                     From students building their first websites, to small teams 
                     streamlining workflows, to researchers and companies tackling 
                     big challenges—Python is there.
                 </p>
                 
-                <p class="text-brown-2 text-base leading-relaxed font-nunito">
+                <p class="text-brown-2 text-base leading-relaxed font-nunito text-center md:text-left xl:text-left">
                     Simple enough to start with, powerful enough to shape the 
                     future. And at PythonPH, we see it every day in our 
                     community: people learning, teaching, and creating together. 
@@ -440,16 +447,47 @@
 </section>
 
 
+        <!-- Call For X -->
+        
+<section id="call-for-x" class="py-20 bg_call-for-links">
+    <div class="container mx-auto px-6">
+        <!-- Header -->
+        <div class="text-center mb-16">
+            <h2 class="text-5xl md:text-6xl font-bold mb-12 font-td_pinoy text-white">Get Involved</h2>
+            <p class="text-[28px] font-bantayog uppercase text-white">Magic happens when people come together to achieve common goals.</p>
+        </div>
+        <div class="flex flex-col sm:flex-row md:items-stretch md:justify-center items-center gap-8 mb-20 max-w-5xl mx-auto">
+
+            <div class="p-8 rounded-2xl w-full max-w-[300px] min-h-[350px] bg-offwhite-2 border-t-[8px] border-t-[#B04301]  h-[250px]">
+                <div class="mb-6">
+                    <h3 class="text-4xl font-bold mb-0 font-bantayog text-brown-1">CALL FOR PROPOSALS</h3>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="text-2xl font-bold mb-0 font-bantayog text-brown-3 font-bold">LINK:</h4>
+                    <a class="text-lg font-bold mb-2 font-bantayog text-brown-2 leading-none underline pointer" href="https://pretalx.com/python-asia-2026/" target="_blank">pretalx.com/python-asia-2026/</a>
+                </div>
+            </div>
+            <div class="p-8 rounded-2xl w-full max-w-[300px] min-h-[350px] bg-offwhite-2 border-t-[8px] border-t-[#ffa218] h-[250px]">
+                <div class="mb-6">
+                    <h3 class="text-4xl font-bold mb-0 font-bantayog text-brown-1">CALL FOR SPONSORS</h3>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="text-2xl font-bold mb-0 font-bantayog text-brown-3 font-bold">LINK:</h4>
+                    <a class="text-lg font-bold mb-2 font-bantayog text-brown-2 leading-none underline pointer" href="https://docs.google.com/forms/d/e/1FAIpQLSd9yOxboIXUv4_nUnzeywojCjEagSfCFKs1D2-onUU4fjzl9g/viewform" target="_blank">bit.ly/PythonAsia2026-CallForSponsors</a>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+</section>
+
         <!-- What is PyCon Section -->
         
-        <!-- Announcement Section -->
-        
-
-
         <!-- When? Where? Section -->
         
 <section id="when-where"
-         class="py-20 bg-[url('/static/img/when-where-bg.jpg')] bg-cover bg-center">
+         class="pt-[80px] pb-[80px] bg-[url('/static/img/when-where-bg.jpg')] bg-cover bg-center">
   <div class="w-full max-w-[1160px] mx-auto px-6 flex flex-col gap-10">
     <div class="flex justify-between items-center">
       <div class="">
@@ -475,59 +513,57 @@
         <!-- Code of Conduct Section -->
         
 
-<section id="code-of-conduct" class="py-20" style="background: linear-gradient(to bottom, #F5DDB8 0%, #EDD4B0 100%);">
+<section id="code-of-conduct" class="py-20" style="background: linear-gradient(to bottom, #F5DDB8 0%, #F3E6D4 100%);">
     <div class="container mx-auto px-6">
         <!-- Header -->
         <div class="text-center mb-16">
-            <h2 class="text-5xl md:text-6xl font-bold mb-12 font-td_pinoy" style="color: #D87A3F;">Code of Conduct</h2>
+            <h2 class="text-5xl md:text-6xl font-bold mb-12 font-td_pinoy text-orange-2">Code of Conduct</h2>
         </div>
 
         <!-- Intro Text -->
         <div class="text-center mb-12 max-w-4xl mx-auto">
-            <p class="text-lg uppercase font-semibold tracking-wide font-bantayog" style="color: #7C5E3B;">
-                PyCon PH is a community conference intended for<br/>
+            <p class="text-3xl md:text-4xl uppercase font-semibold tracking-wide font-bantayog text-brown-1">
+                PythonAsia is a community conference intended for<br/>
                 collaboration in the developer community.
             </p>
         </div>
 
         <!-- Main Content Grid -->
         <div class="grid md:grid-cols-2 gap-12 mb-20 max-w-5xl mx-auto">
-            <div class="text-left">
-                <p class="text-base leading-relaxed font-nunito" style="color: #7C5E3B;">
-                    We value the participation of each member of the Python 
-                    community and want all attendees to have an enjoyable 
-                    and fulfilling experience. Accordingly, all attendees are 
-                    expected to show respect and courtesy to other attendees 
-                    throughout the conference and at all conference events, 
-                    whether officially sponsored by PythonPH, Inc. or not.
+            <div class="text-center md:text-left xl:text-left">
+                <p class="text-lg leading-relaxed font-nunito text-brown-2 font-normal">
+                    We value the participation of each member of the Python community and want all 
+                    attendees to have an enjoyable and fulfilling experience. Accordingly, all attendees 
+                    are expected to show respect and courtesy to other attendees throughout the conference 
+                    and at all conference events, whether officially sponsored by PythonPH and 
+                    Python Asia Organization (PAO) or not.
                 </p>
             </div>
-            <div class="text-left">
-                <p class="text-base leading-relaxed font-nunito" style="color: #7C5E3B;">
-                    To make clear what is expected, all delegates/attendees, 
-                    speakers, exhibitors, organizers and volunteers at any 
-                    PyCon event are required to conform to the following 
-                    Code of Conduct. Organizers will enforce this code 
-                    throughout the event.
+            <div class="text-center md:text-left xl:text-left">
+                <p class="text-lg leading-relaxed font-nunito text-brown-2 font-normal">
+                    To make clear what is expected, all delegates/attendees, speakers, exhibitors, 
+                    organizers and volunteers at any PythonAsia event are required to conform to the 
+                    following Code of Conduct. Organizers will enforce this code throughout the event.<br>
+                    <a class="font-bantayog text-orange-2 uppercase underline cursor-pointer" href="#">Read the Full Code of Conduct</a>
                 </p>
             </div>
         </div>
 
         <!-- Contact Information -->
         <div class="mb-20 max-w-4xl mx-auto">
-            <h3 class="text-3xl md:text-4xl font-bold text-center mb-8 font-bantayog" style="color: #7C5E3B;">CONTACT INFORMATION</h3>
-            <p class="text-base text-center leading-relaxed font-nunito" style="color: #7C5E3B;">
-                If you believe that someone is violating the code of conduct, or have any other concerns, please contact a member of the 
-                PyCon APAC 2025 Code of Conduct workgroup immediately. They can be reached by emailing coc@python.ph
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-2 font-bantayog text-brown-1">CONTACT INFORMATION</h3>
+            <p class="text-lg leading-relaxed font-nunito text-brown-2 font-normal text-center">
+                If you believe that someone is violating the code of conduct, or have any other concerns, 
+                please contact a member of the PythonAsia 2026 Code of Conduct workgroup immediately. 
+                They can be reached by emailing <a href="mailto:coc@python.ph">coc@python.ph</a>
             </p>
         </div>
 
         <!-- License -->
         <div class="max-w-4xl mx-auto">
-            <h3 class="text-3xl md:text-4xl font-bold text-center mb-8 font-bantayog" style="color: #7C5E3B;">LICENSE</h3>
-            <p class="text-base text-center leading-relaxed font-nunito" style="color: #7C5E3B;">
-                This Code of Conduct is based on the PyCon US 2015 CoC, and is licensed under a Creative Commons 
-                Attribution 3.0 Unported License.
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-2 font-bantayog text-brown-1">LICENSE</h3>
+            <p class="text-lg leading-relaxed font-nunito text-brown-2 font-normal text-center">
+                This Code of Conduct is based on the PyCon US 2015 CoC, and is licensed under a Creative Commons
             </p>
         </div>
     </div>
@@ -545,8 +581,8 @@
     
 
     <!-- Contact Message -->
-    <p class="text-[#7C5E3B] text-sm mb-4 font-nunito text-center px-5">
-        Message us at <a href="mailto:pycon@python.ph" class="underline">pycon@python.ph</a> for questions and inquiries
+    <p class="text-brown-2 text-base mt-4 mb-4 font-nunito text-center px-5">
+        Message us at <a href="mailto:conference-2026@pythonasia.org" class="text-orange-2 underline font-normal">conference-2026@pythonasia.org</a> for questions and inquiries
     </p>
 
     <!-- Social Media Icons -->
@@ -566,7 +602,7 @@
     </div>
 
     <!-- Built With Text -->
-    <p class="text-[#7C5E3B] text-sm mb-8 font-nunito px-5" style="z-index: 2;">
+    <p class="text-brown-2 text-sm mb-8 font-nunito px-5" style="z-index: 2;">
         This site is built using Django.
     </p>
 
@@ -590,6 +626,7 @@
 </footer>
 
     </div>
+</main>
 
     </body>
 </html>
