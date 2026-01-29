@@ -21,8 +21,22 @@ class SponsorAdmin(admin.ModelAdmin):
     readonly_fields = ["created_at", "updated_at"]
 
     fieldsets = (
-        ("Basic Information", {"fields": ("name", "sponsor_type", "is_pao_connected", "info")}),
+        ("Basic Information", {"fields": ("name", "sponsor_type", "platinum_category", "is_pao_connected", "info")}),
         ("Media & Links", {"fields": ("logo_url", "website_url")}),
         ("Contact Information", {"fields": ("contact_name", "contact_email")}),
         ("Dates", {"fields": ("sponsorship_date", "created_at", "updated_at")}),
     )
+
+    def get_fieldsets(self, request, obj=None):
+        fieldsets = super().get_fieldsets(request, obj)
+        if obj and obj.sponsor_type != Sponsor.SponsorType.PLATINUM:
+            # Remove platinum_category from Basic Information if sponsor is not PLATINUM
+            new_fieldsets = []
+            for name, fieldset_dict in fieldsets:
+                if name == "Basic Information":
+                    fields = tuple(f for f in fieldset_dict["fields"] if f != "platinum_category")
+                    new_fieldsets.append((name, {**fieldset_dict, "fields": fields}))
+                else:
+                    new_fieldsets.append((name, fieldset_dict))
+            return tuple(new_fieldsets)
+        return fieldsets

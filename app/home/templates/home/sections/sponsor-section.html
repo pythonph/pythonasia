@@ -204,17 +204,25 @@
         {% elif sponsor_type_key == "PLATINUM" %}
           <div class="mb-16">
             <h3 class="text-2xl font-bold mb-8 uppercase font-bantayog font-bantayog"
-                style="color: #7c5e3b">Platinum Sponsor</h3>
+                style="color: #7c5e3b">Platinum Level</h3>
             <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
               {% for sponsor in sponsors %}
                 <div class="{% if sponsor.info %}sponsor-card-container group{% endif %} relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8 {% if sponsor.info %}cursor-pointer{% endif %}">
-                    {% if sponsor.is_pao_connected %}
-                    <img
-                      src="/static/img/vectors/pao-ribbon.svg"
-                      alt="PAO Ribbon"
-                      class="sponsor-pao-ribbon absolute top-0 right-[20px] w-[50px] z-20"
-                    >
-                    {% endif %}
+                  {% if sponsor.is_pao_connected %}
+                  <img
+                    src="/static/img/vectors/pao-ribbon.svg"
+                    alt="PAO Ribbon"
+                    class="sponsor-pao-ribbon absolute top-0 right-[20px] w-[50px] z-20">
+                  {% endif %}
+                  {% if sponsor.platinum_category %}
+                    <div class="absolute top-3 left-3 md:top-4 md:left-4 {%if sponsor.platinum_category == 'PARTNER'%}bg-orange-1{% else %}bg-orange-2{% endif %} font-bantayog text-white text-xs md:text-sm px-2 py-1 rounded-xl">
+                      {{ sponsor.platinum_category }}
+                    </div>
+                  {% else %}
+                    <div class="absolute top-3 left-3 md:top-4 md:left-4 bg-orange-2 text-white font-bantayog  text-xs md:text-sm px-2 py-1 rounded-xl">
+                      Sponsor
+                    </div>
+                  {% endif %}
                   {% if sponsor.website_url %}
                     <a href="{{ sponsor.website_url }}"
                        target="_blank"

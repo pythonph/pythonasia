@@ -25,6 +25,13 @@ class Sponsor(models.Model):
     is_pao_connected = models.BooleanField(
         default=True, verbose_name="PAO Connection", help_text="Toggle to show/hide the PAO ribbon"
     )
+    platinum_category = models.CharField(
+        max_length=50,
+        blank=True,
+        null=True,
+        help_text="Select the Platinum category for this sponsor",
+        choices=[("SPONSOR", "Sponsor"), ("PARTNER", "Partner")],
+    )
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
